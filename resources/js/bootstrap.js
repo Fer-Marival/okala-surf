@@ -14,6 +14,7 @@ try {
     require('bootstrap');
 
     window.sliderPro = require('slider-pro');
+    window.parallax = require('parallax-js');
     
 } catch (e) {}
 

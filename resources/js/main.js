@@ -15,3 +15,16 @@ $( document ).ready(function( $ ) {
 			autoplay: true
 		});
 	});
+
+var scene = document.getElementById('scene');
+// var parallaxInstance = new Parallax(scene);
+
+//fixed nav bar
+window.addEventListener('scroll',()=>{
+	let scroll = document.documentElement.scrollTop || document.body.scrollTop,
+		 menu = document.getElementsByClassName('booking')
+
+	scroll >= 400
+		? menu[0].classList.add('fixed')
+		: menu[0].classList.remove('fixed')
+})

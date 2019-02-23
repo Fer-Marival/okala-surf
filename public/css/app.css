@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Rock+Salt);/*!
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);@import url(https://fonts.googleapis.com/css?family=Rock+Salt);/*!
 *  - v1.5.0
 * Homepage: http://bqworks.com/slider-pro/
 * Author: bqworks
@@ -39,7 +39,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: "Montserrat", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -71,7 +71,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2511,7 +2511,8 @@ textarea.form-control.is-invalid {
   }
 }
 
-.btn {
+.btn,
+.booking form button {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -2531,28 +2532,35 @@ textarea.form-control.is-invalid {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn,
+  .booking form button {
     transition: none;
   }
 }
 
-.btn:hover {
+.btn:hover,
+.booking form button:hover {
   color: #212529;
   text-decoration: none;
 }
 
 .btn:focus,
-.btn.focus {
+.booking form button:focus,
+.btn.focus,
+.booking form button.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(9, 203, 234, 0.25);
 }
 
 .btn.disabled,
-.btn:disabled {
+.booking form button.disabled,
+.btn:disabled,
+.booking form button:disabled {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled),
+.booking form button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
@@ -2675,41 +2683,53 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(86, 202, 135, 0.5);
 }
 
-.btn-info {
+.btn-info,
+.booking form button {
   color: #212529;
   background-color: #6cb2eb;
   border-color: #6cb2eb;
 }
 
-.btn-info:hover {
+.btn-info:hover,
+.booking form button:hover {
   color: #fff;
   background-color: #4aa0e6;
   border-color: #3f9ae5;
 }
 
 .btn-info:focus,
-.btn-info.focus {
+.booking form button:focus,
+.btn-info.focus,
+.booking form button.focus {
   box-shadow: 0 0 0 0.2rem rgba(97, 157, 206, 0.5);
 }
 
 .btn-info.disabled,
-.btn-info:disabled {
+.booking form button.disabled,
+.btn-info:disabled,
+.booking form button:disabled {
   color: #212529;
   background-color: #6cb2eb;
   border-color: #6cb2eb;
 }
 
 .btn-info:not(:disabled):not(.disabled):active,
+.booking form button:not(:disabled):not(.disabled):active,
 .btn-info:not(:disabled):not(.disabled).active,
-.show > .btn-info.dropdown-toggle {
+.booking form button:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle,
+.booking form .show > button.dropdown-toggle {
   color: #fff;
   background-color: #3f9ae5;
   border-color: #3495e3;
 }
 
 .btn-info:not(:disabled):not(.disabled):active:focus,
+.booking form button:not(:disabled):not(.disabled):active:focus,
 .btn-info:not(:disabled):not(.disabled).active:focus,
-.show > .btn-info.dropdown-toggle:focus {
+.booking form button:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus,
+.booking form .show > button.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(97, 157, 206, 0.5);
 }
 
@@ -3176,7 +3196,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg,
-.btn-group-lg > .btn {
+.btn-group-lg > .btn,
+.booking form .btn-group-lg > button {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -3184,7 +3205,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-sm,
-.btn-group-sm > .btn {
+.btn-group-sm > .btn,
+.booking form .btn-group-sm > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.7875rem;
   line-height: 1.5;
@@ -3517,22 +3539,32 @@ input[type=button].btn-block {
 }
 
 .btn-group > .btn,
-.btn-group-vertical > .btn {
+.booking form .btn-group > button,
+.btn-group-vertical > .btn,
+.booking form .btn-group-vertical > button {
   position: relative;
   flex: 1 1 auto;
 }
 
 .btn-group > .btn:hover,
-.btn-group-vertical > .btn:hover {
+.booking form .btn-group > button:hover,
+.btn-group-vertical > .btn:hover,
+.booking form .btn-group-vertical > button:hover {
   z-index: 1;
 }
 
 .btn-group > .btn:focus,
+.booking form .btn-group > button:focus,
 .btn-group > .btn:active,
+.booking form .btn-group > button:active,
 .btn-group > .btn.active,
+.booking form .btn-group > button.active,
 .btn-group-vertical > .btn:focus,
+.booking form .btn-group-vertical > button:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.booking form .btn-group-vertical > button:active,
+.btn-group-vertical > .btn.active,
+.booking form .btn-group-vertical > button.active {
   z-index: 1;
 }
 
@@ -3547,18 +3579,23 @@ input[type=button].btn-block {
 }
 
 .btn-group > .btn:not(:first-child),
+.booking form .btn-group > button:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.booking form .btn-group > button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn,
+.booking form .btn-group > .btn-group:not(:last-child) > button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .btn-group > .btn:not(:first-child),
-.btn-group > .btn-group:not(:first-child) > .btn {
+.booking form .btn-group > button:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn,
+.booking form .btn-group > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3579,13 +3616,15 @@ input[type=button].btn-block {
 }
 
 .btn-sm + .dropdown-toggle-split,
-.btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-group-sm > .btn + .dropdown-toggle-split,
+.booking form .btn-group-sm > button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
 .btn-lg + .dropdown-toggle-split,
-.btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-group-lg > .btn + .dropdown-toggle-split,
+.booking form .btn-group-lg > button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3597,34 +3636,44 @@ input[type=button].btn-block {
 }
 
 .btn-group-vertical > .btn,
+.booking form .btn-group-vertical > button,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
 
 .btn-group-vertical > .btn:not(:first-child),
+.booking form .btn-group-vertical > button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
 
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+.booking form .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.booking form .btn-group-vertical > .btn-group:not(:last-child) > button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .btn-group-vertical > .btn:not(:first-child),
-.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+.booking form .btn-group-vertical > button:not(:first-child),
+.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.booking form .btn-group-vertical > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
 .btn-group-toggle > .btn,
-.btn-group-toggle > .btn-group > .btn {
+.booking form .btn-group-toggle > button,
+.btn-group-toggle > .btn-group > .btn,
+.booking form .btn-group-toggle > .btn-group > button {
   margin-bottom: 0;
 }
 
 .btn-group-toggle > .btn input[type=radio],
+.booking form .btn-group-toggle > button input[type=radio],
 .btn-group-toggle > .btn input[type=checkbox],
+.booking form .btn-group-toggle > button input[type=checkbox],
 .btn-group-toggle > .btn-group > .btn input[type=radio],
 .btn-group-toggle > .btn-group > .btn input[type=checkbox] {
   position: absolute;
@@ -3709,24 +3758,52 @@ input[type=button].btn-block {
 }
 
 .input-group-prepend .btn,
-.input-group-append .btn {
+.input-group-prepend .booking form button,
+.booking form .input-group-prepend button,
+.input-group-append .btn,
+.input-group-append .booking form button,
+.booking form .input-group-append button {
   position: relative;
   z-index: 2;
 }
 
 .input-group-prepend .btn:focus,
-.input-group-append .btn:focus {
+.input-group-prepend .booking form button:focus,
+.booking form .input-group-prepend button:focus,
+.input-group-append .btn:focus,
+.input-group-append .booking form button:focus,
+.booking form .input-group-append button:focus {
   z-index: 3;
 }
 
 .input-group-prepend .btn + .btn,
+.input-group-prepend .booking form button + .btn,
+.booking form .input-group-prepend button + .btn,
+.input-group-prepend .booking form .btn + button,
+.booking form .input-group-prepend .btn + button,
+.input-group-prepend .booking form button + button,
+.booking form .input-group-prepend button + button,
 .input-group-prepend .btn + .input-group-text,
+.input-group-prepend .booking form button + .input-group-text,
+.booking form .input-group-prepend button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
+.input-group-prepend .booking form .input-group-text + button,
+.booking form .input-group-prepend .input-group-text + button,
 .input-group-append .btn + .btn,
+.input-group-append .booking form button + .btn,
+.booking form .input-group-append button + .btn,
+.input-group-append .booking form .btn + button,
+.booking form .input-group-append .btn + button,
+.input-group-append .booking form button + button,
+.booking form .input-group-append button + button,
 .input-group-append .btn + .input-group-text,
+.input-group-append .booking form button + .input-group-text,
+.booking form .input-group-append button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
-.input-group-append .input-group-text + .btn {
+.input-group-append .input-group-text + .btn,
+.input-group-append .booking form .input-group-text + button,
+.booking form .input-group-append .input-group-text + button {
   margin-left: -1px;
 }
 
@@ -3769,7 +3846,9 @@ input[type=button].btn-block {
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
+.booking form .input-group-lg > .input-group-prepend > button,
+.input-group-lg > .input-group-append > .btn,
+.booking form .input-group-lg > .input-group-append > button {
   padding: 0.5rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -3786,7 +3865,9 @@ input[type=button].btn-block {
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
+.booking form .input-group-sm > .input-group-prepend > button,
+.input-group-sm > .input-group-append > .btn,
+.booking form .input-group-sm > .input-group-append > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.7875rem;
   line-height: 1.5;
@@ -3799,20 +3880,26 @@ input[type=button].btn-block {
 }
 
 .input-group > .input-group-prepend > .btn,
+.booking form .input-group > .input-group-prepend > button,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+.booking form .input-group > .input-group-append:not(:last-child) > button,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.booking form .input-group > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .input-group > .input-group-append > .btn,
+.booking form .input-group > .input-group-append > button,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+.booking form .input-group > .input-group-prepend:not(:first-child) > button,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.booking form .input-group > .input-group-prepend:first-child > button:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -5181,7 +5268,8 @@ a.badge:focus {
   display: none;
 }
 
-.btn .badge {
+.btn .badge,
+.booking form button .badge {
   position: relative;
   top: -1px;
 }
@@ -5985,7 +6073,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -6110,7 +6198,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -7917,7 +8005,9 @@ button.bg-dark:focus {
 }
 
 .shadow-lg,
-.instagram .card:hover {
+.instagram .card:hover,
+.coaches .coach,
+.booking {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
@@ -10502,6 +10592,16 @@ body {
   font-size: 1.1rem;
 }
 
+h1 {
+  font-size: 38pt;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #09cbea;
+  font-family: "Rock Salt", cursive;
+}
+
 h3 {
   color: #09cbea;
   text-align: center;
@@ -10526,20 +10626,59 @@ h3 {
 
 .booking {
   position: absolute;
-  width: 100%;
+  width: 98%;
   left: 0;
   right: 0;
   bottom: 200px;
   max-width: 1000px;
   margin: auto;
+  z-index: 100;
+}
+
+.booking form .row {
   background-color: white;
-  padding: 10px 0;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.booking form .row .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 0.5px solid #f8fafc;
+}
+
+.booking form .row .col:nth-child(1) {
+  border-left: 0;
+}
+
+.booking form .row .col:nth-last-child(1) {
+  padding: 0;
 }
 
 .booking form input {
   border: 0;
   background-color: #f8fafc;
+}
+
+.booking form label {
+  text-align: center;
+  display: block;
+}
+
+.booking form select {
+  display: block;
+  margin: auto;
+}
+
+.booking form button {
+  background-image: linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  font-size: 20pt;
+  color: white;
 }
 
 .services {
@@ -10548,7 +10687,6 @@ h3 {
 }
 
 .service {
-  border-left: 0.5px solid #f8fafc;
   padding-top: 10px;
 }
 
@@ -10580,36 +10718,9 @@ h3 {
 
 .coaches .coach {
   margin: 1.5em auto;
-  border-radius: 8px;
   transition: all 0.25s ease-in-out;
-}
-
-.coaches .coach .card-content {
-  padding: 20px;
-}
-
-.coaches .coach .card-content .name {
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.8;
-  font-size: 14pt;
-  text-transform: uppercase;
-}
-
-.coaches .coach .card-content .social {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.coaches .coach .card-content .social a {
-  text-align: center;
-  color: #09cbea;
-  font-size: 1.4rem;
-  margin-left: 5px;
-  border-radius: 4px;
-  display: inline-block;
-  text-align: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .coaches .coach:hover {
@@ -10688,6 +10799,24 @@ h3 {
   overflow: hidden;
   border: 0;
   transition: all 0.25s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto !important;
+}
+
+@media screen and (min-width: 600px) {
+  .fixed {
+    position: fixed;
+  }
 }
 
 .navbar-laravel {

@@ -1,23 +1,58 @@
 @extends('layout.principal')
 @section('content')
 	<div class="home">
-		<div class="booking shadow-lg">
-			<form>
+		<div class="booking">
+			<form class="form">
 			  <div class="row">
-			    <div class="col">
-			      <input type="text" class="form-control" placeholder="First name">
+			  	<div class="col">
+			    	<label for="day">Day</label>
+			     	<input type="date" name="day" class="form-control" placeholder="Select Day">
 			    </div>
 			    <div class="col">
-			      <input type="text" class="form-control" placeholder="Last name">
+			    	<label for="name">Time</label>
+			     	<input type="time" name="name" class="form-control" placeholder="First name">
+			    </div>
+			    <div class="col">
+			    	<label for="">Adultos</label>
+			      <select>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					</select>
 			    </div>
 			  <div class="col">
-			      <input type="text" class="form-control" placeholder="Last name">
+			  	<label for="">Niños</label>
+			     <select>
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				</select>
 			    </div>
 			     <div class="col">
 				  	<button>Reserve</button>
 				  </div>
 			  </div>
 			</form>
+		</div>
+	</div>
+	<div id="description">
+		<div class="container">
+			<div class="row align-items-center" id="scene">
+				<div class="col" data-depth="0.2">
+					<picture><img src="{{asset('img/home2.jpg')}}"  alt="" class="img-fluid"></picture>
+				</div>
+				<div class="col">
+					<div class="title">
+						<h1>Okala</h1>
+						<h2>vallarta surf school</h2>
+					</div>
+					<div class="content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit molestias, rem. Odit laudantium voluptates reprehenderit totam rerum, quisquam eligendi dolorem dolorum adipisci doloribus, vel iste quibusdam consectetur numquam officia.
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<section class="services">
@@ -59,113 +94,13 @@
 		</div>
 	</section>
 	<div class="clear"></div>
-	<div id="description">
-		<div class="container">
-			<div class="row lign-items-center">
-				<div class="col image"></div>
-				<div class="col">
-					<div class="title">
-						<h1>Okala</h1>
-						<h2>vallarta surf school</h2>
-					</div>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit molestias, rem. Odit laudantium voluptates reprehenderit totam rerum, quisquam eligendi dolorem dolorum adipisci doloribus, vel iste quibusdam consectetur numquam officia.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
-	<div class="coaches">
-		<h3 class="title">Our Professionals Coaches</h3>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-4"><div class="coach shadow-lg">
-					<img src="{!!asset('img/coach/jona.jpg')!!}" class="img-fluid" alt="">
-					<div class="card-content">
-						<div class="name">El perro "Frijol" </div>
-						<div class="social">
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-instagram"></i></a>
-							<a href=""><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="short">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						</div>
-
-					</div>
-				</div></div>
-				<div class="col-md-4"><div class="coach shadow-lg">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-					<div class="card-content">
-						<div class="name">El perro "Frijol" </div>
-						<div class="social">
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-instagram"></i></a>
-							<a href=""><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="short">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						</div>
-
-					</div>
-				</div></div>
-				<div class="col-md-4"><div class="coach shadow-lg">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-					<div class="card-content">
-						<div class="name">El perro "Frijol" </div>
-						<div class="social">
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-instagram"></i></a>
-							<a href=""><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="short">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						</div>
-
-					</div>
-				</div></div>
-				<div class="col-md-4"><div class="coach shadow-lg">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-					<div class="card-content">
-						<div class="name">El perro "Frijol" </div>
-						<div class="social">
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-instagram"></i></a>
-							<a href=""><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="short">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						</div>
-
-					</div>
-				</div></div>
-				<div class="col-md-4"><div class="coach shadow-lg">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-					<div class="card-content">
-						<div class="name">El perro "Frijol" </div>
-						<div class="social">
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-instagram"></i></a>
-							<a href=""><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="short">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						</div>
-
-					</div>
-				</div></div>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
 	<section class="instagram">
 		<div class="container-fluid">
 			<h3>Our Happy Moments</h3>
 		<div class="row">
 			<div class="card-columns">
 			  <div class="card">
-			    	<img src="{!!asset('img/coach/1.jpeg')!!}" class="card-img-top" alt="...">
+			    	<img src="{!!asset('img/girls.jpg')!!}" class="card-img-top" alt="...">
 			  </div>
 			  <div class="card p-3">
 			    <blockquote class="blockquote mb-0 card-body">
@@ -178,7 +113,7 @@
 			    </blockquote>
 			  </div>
 			  <div class="card">
-			    <img src="{!!asset('img/coach/1.jpeg')!!}" class="card-img-top" alt="...">
+			    <img src="{!!asset('img/girls2.jpg')!!}" class="card-img-top" alt="...">
 			  </div>
 			  <div class="card bg-primary text-white text-center p-3">
 			    <blockquote class="blockquote mb-0">
@@ -244,6 +179,30 @@
 			</div>
 		</div>
 	</section>
+	<div class="clear"></div>
+		<div class="coaches">
+		<h3 class="title">Our Professionals Coaches</h3>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col">
+					<div class="coach">
+					<img src="{!!asset('img/coach/jona.jpg')!!}" class="img-fluid" alt="">
+				</div></div>
+				<div class="col"><div class="coach">
+					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+				</div></div>
+				<div class="col"><div class="coach">
+					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+				</div></div>
+				<div class="col"><div class="coach">
+					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+				</div></div>
+				<div class="col"><div class="coach">
+					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+				</div></div>
+			</div>
+		</div>
+	</div>
 	<div class="clear"></div>
 	<section class="events">
 		<div class="container">
