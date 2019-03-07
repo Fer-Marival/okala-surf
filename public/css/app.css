@@ -10691,7 +10691,7 @@ h3 {
 }
 
 .service img {
-  width: 40px;
+  width: 80px;
   fill: #09cbea;
 }
 
@@ -10721,6 +10721,8 @@ h3 {
   transition: all 0.25s ease-in-out;
   overflow: hidden;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 .coaches .coach:hover {
@@ -10776,10 +10778,15 @@ h3 {
   border-radius: 8px;
   margin: 1.5em auto;
   border: 0.5px solid #f8fafc;
+  height: 350px;
+}
+
+.events .event img {
+  margin-bottom: 1em;
 }
 
 .events .event em {
-  margin: 1em 0;
+  margin-top: 1em;
   color: #666;
   padding: 15px;
 }
@@ -10820,8 +10827,96 @@ h3 {
 }
 
 footer {
+  background-image: linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
   background-color: #1D6FA3;
+  padding-top: 50px;
   margin-top: 2em;
+}
+
+footer .copys {
+  background-color: blue;
+  color: white;
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+.bk-header {
+  background-image: url("/img/girls.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 2em;
+}
+
+.header {
+  background-color: white;
+  height: 40px;
+  border-bottom: 0.5px solid #ccc;
+}
+
+#social {
+  margin: 2em auto;
+  /* ---- grid ---- */
+  /* ---- .grid-item ---- */
+}
+
+#social .insta-follow {
+  height: 100px;
+}
+
+#social .insta-follow img {
+  max-height: 40px;
+  width: 40px;
+}
+
+#social .insta-follow img,
+#social .insta-follow .tittle,
+#social .insta-follow a {
+  float: left;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+#social .grid {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#social .grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#social .grid-sizer,
+#social .grid-item {
+  width: 200px;
+  height: 200px;
+}
+
+#social .grid-sizer:hover,
+#social .grid-item:hover {
+  background: #09cbea;
+}
+
+#social .grid-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid white;
+}
+
+#social .grid-item img:hover {
+  opacity: 0.8;
+}
+
+#social .grid-item:nth-child(2),
+#social .grid-item:nth-child(7) {
+  width: 400px;
+  height: 400px;
 }
 
 .navbar-laravel {

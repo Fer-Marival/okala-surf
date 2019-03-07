@@ -2,11 +2,12 @@
 @section('content')
 	<div class="home">
 		<div class="booking">
-			<form class="form">
+			<form class="form" action="{{route('booking.send')}}" method="POST" enctype="multipart/form-data">
+				@csrf
 			  <div class="row">
 			  	<div class="col">
 			    	<label for="day">Day</label>
-			     	<input type="date" name="day" class="form-control" placeholder="Select Day">
+			     	<input type="text" name="day" class="form-control" placeholder="Select Day">
 			    </div>
 			    <div class="col">
 			    	<label for="name">Time</label>
@@ -142,6 +143,12 @@
 		</div>
 	</section>
 	<div class="clear"></div>
+	<div id="social">
+			<h3>Síguenos en Instagram <span>&#x02992;</span></h3>
+			<div id="instafeed" class='grid'>
+			  	<div class="grid-sizer"></div>
+			</div>
+		</div>
 	<section class="coments">
 		<div class="container">
 			<div class="row">
@@ -180,7 +187,7 @@
 		</div>
 	</section>
 	<div class="clear"></div>
-		<div class="coaches">
+	<div class="coaches">
 		<h3 class="title">Our Professionals Coaches</h3>
 		<div class="container">
 			<div class="row justify-content-center">
@@ -237,7 +244,32 @@
 		<div class="container">
 			<h3>Contact us! 🤙</h3>
 			<div class="row">
-				<div class="col"></div>
+				<div class="col">
+					<div class="slider-pro" id="booking-slider">
+						<div class="sp-slides">
+							<div class="sp-slide">
+								<section>
+									<img src="{!!asset('img/booking1.jpeg')!!}" alt="" class="sp-image">
+								</section>
+							</div>
+							<div class="sp-slide">
+								<section>
+									<img src="{!!asset('img/booking2.jpeg')!!}" alt="" class="sp-image">
+								</section>
+							</div>
+							<div class="sp-slide">
+								<section>
+									<img src="{!!asset('img/booking3.jpeg')!!}" alt="" class="sp-image">
+								</section>
+							</div>
+							<div class="sp-slide">
+								<section>
+									<img src="{!!asset('img/booking4.jpeg')!!}" alt="" class="sp-image">
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="col">
 				<form>
 				  <div class="form-row">
@@ -275,15 +307,14 @@
 				    <div class="form-check">
 				      <input class="form-check-input" type="checkbox" id="gridCheck">
 				      <label class="form-check-label" for="gridCheck">
-				        Check me out
+				        Acept Terms and conditions
 				      </label>
 				    </div>
 				  </div>
-				  <button type="submit" class="btn btn-primary">Sign in</button>
+				  <button type="submit" class="btn btn-primary">Send Message</button>
 				</form>
 			</div>
 			</div>
-			
 			
 		</div>
 	</div>

@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('/booking', function () {
+    return view('pages.booking');
+});
+Route::get('/articles', 'PageController@index');
+
+
+Route::post('/', 'PageController@store')->name('booking.send');

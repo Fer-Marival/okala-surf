@@ -14,8 +14,11 @@ try {
     require('bootstrap');
 
     window.sliderPro = require('slider-pro');
-    window.parallax = require('parallax-js');
-    
+    window.daterange = require('daterangepicker');
+    window.insta = require('instafeed');
+    window.imagesloaded = require('imagesLoaded');
+    window.masonry= require('masonry-layout');
+
 } catch (e) {}
 
 /**
