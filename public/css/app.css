@@ -607,7 +607,8 @@ pre code {
   }
 }
 
-.container-fluid {
+.container-fluid,
+#social {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -4459,7 +4460,8 @@ input[type=button].btn-block {
 }
 
 .navbar > .container,
-.navbar > .container-fluid {
+.navbar > .container-fluid,
+.navbar > #social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4541,7 +4543,8 @@ input[type=button].btn-block {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
+  .navbar-expand-sm > .container-fluid,
+  .navbar-expand-sm > #social {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4567,7 +4570,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-sm > .container,
-  .navbar-expand-sm > .container-fluid {
+  .navbar-expand-sm > .container-fluid,
+  .navbar-expand-sm > #social {
     flex-wrap: nowrap;
   }
 
@@ -4583,7 +4587,8 @@ input[type=button].btn-block {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .container-fluid,
+  .navbar-expand-md > #social {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4609,7 +4614,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
+  .navbar-expand-md > .container-fluid,
+  .navbar-expand-md > #social {
     flex-wrap: nowrap;
   }
 
@@ -4625,7 +4631,8 @@ input[type=button].btn-block {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > #social {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4651,7 +4658,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > #social {
     flex-wrap: nowrap;
   }
 
@@ -4667,7 +4675,8 @@ input[type=button].btn-block {
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
+  .navbar-expand-xl > .container-fluid,
+  .navbar-expand-xl > #social {
     padding-right: 0;
     padding-left: 0;
   }
@@ -4693,7 +4702,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid {
+  .navbar-expand-xl > .container-fluid,
+  .navbar-expand-xl > #social {
     flex-wrap: nowrap;
   }
 
@@ -4713,7 +4723,8 @@ input[type=button].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .container-fluid,
+.navbar-expand > #social {
   padding-right: 0;
   padding-left: 0;
 }
@@ -4732,7 +4743,8 @@ input[type=button].btn-block {
 }
 
 .navbar-expand > .container,
-.navbar-expand > .container-fluid {
+.navbar-expand > .container-fluid,
+.navbar-expand > #social {
   flex-wrap: nowrap;
 }
 
@@ -10860,6 +10872,12 @@ footer .copys {
   margin: 2em auto;
   /* ---- grid ---- */
   /* ---- .grid-item ---- */
+  /*
+  .grid-item:nth-child(2),
+  .grid-item:nth-child(7) {
+    width: 400px;
+    height: 400px;
+  }*/
 }
 
 #social .insta-follow {
@@ -10881,7 +10899,6 @@ footer .copys {
 
 #social .grid {
   display: flex;
-  max-width: 1000px;
   margin: auto;
 }
 
@@ -10911,12 +10928,6 @@ footer .copys {
 
 #social .grid-item img:hover {
   opacity: 0.8;
-}
-
-#social .grid-item:nth-child(2),
-#social .grid-item:nth-child(7) {
-  width: 400px;
-  height: 400px;
 }
 
 .navbar-laravel {

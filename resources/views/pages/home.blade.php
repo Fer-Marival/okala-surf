@@ -145,7 +145,7 @@
 	<div class="clear"></div>
 	<div id="social">
 			<h3>Síguenos en Instagram <span>&#x02992;</span></h3>
-			<div id="instafeed" class='grid'>
+			<div id="instafeed" class='grid row'>
 			  	<div class="grid-sizer"></div>
 			</div>
 		</div>

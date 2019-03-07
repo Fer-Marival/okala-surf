@@ -57,7 +57,7 @@ var feed = new Instafeed({
   userId: 7493294533,
   accessToken: '7493294533.1677ed0.2c006cb41f694755b99942cb17103001',
   resolution: 'standard_resolution', 
-  template: '<div class="grid-item"><a href="{{link}}" title="{{caption}}" data-fancybox="gallery" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+  template: '<div class="grid-item col"><a href="{{link}}" title="{{caption}}" data-fancybox="gallery" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
   limit: 9,
   sortBy: 'random',
   after: function() {
