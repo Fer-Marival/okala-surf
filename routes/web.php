@@ -20,5 +20,8 @@ Route::get('/booking', function () {
 });
 Route::get('/articles', 'PageController@index');
 
-
 Route::post('/', 'PageController@store')->name('booking.send');
+
+Route::get('booknow', 'BookController@booknow');
+Route::post('booknow', ['as'=>'booknow.store',
+'uses'=> 'BookController@booknowPost']);

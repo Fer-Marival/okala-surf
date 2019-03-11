@@ -6,8 +6,14 @@
 <div class="booking-form">
 	<div class="container">
 		<div class="row">
+			@if(Session::has('success'))
+			   <div class="alert alert-success">
+			     {{ Session::get('success') }}
+			   </div>
+			@endif
 			<div class="col-md-8">
-				<form action="" class="form">
+				<form action="{{route('booknow.store')}}" method="POST" enctype="multipart/form-data" class="form">
+					@csrf
 					<h3>Reservation data</h3>
 				  <div class="form-row">
 					    <div class="form-group col-md-6">
@@ -16,34 +22,35 @@
 					    </div>
 					    <div class="form-group col-md-6">
 					      <label for="lastname">Last Name:</label>
-					      <input type="text" class="form-control" placeholder="Last name">
+					      <input type="text" class="form-control" placeholder="Last name" name="lastname">
 					    </div>
 					  </div>
 					  <div class="form-row">
 					    <div class="form-group col-md-6">
 					      <label for="inputEmail4">Email</label>
-					      <input type="email" class="form-control" placeholder="Email">
+					      <input type="email" class="form-control" placeholder="Email" name="email">
 					    </div>
 					    <div class="form-group col-md-6">
 					      <label for="inputPassword4">Cell phone</label>
-					      <input type="number" class="form-control" placeholder="Phone">
+					      <input type="number" class="form-control" placeholder="Phone" name="cellphone">
 					    </div>
 					  </div>
 					   <div class="form-row">
 					   	 <div class="form-group col-md-4">
 					       <label for="inputState">Cuntry</label>
-					      <select id="inputState" class="form-control">
+					      <select id="inputState" name="country" class="form-control">
 					        <option selected>Choose...</option>
-					        <option>...</option>
+					        <option>US</option>
+					        <option>México</option>
 					      </select>
 					    </div>
 					    <div class="form-group col-md-4">
 					      <label for="inputCity">City</label>
-					      <input type="text" class="form-control" id="inputCity">
+					      <input type="text" class="form-control" name="city" id="inputCity">
 					    </div>
 					    <div class="form-group col-md-4">
 					      <label for="inputState">State</label>
-					      <select id="inputState" class="form-control">
+					      <select id="inputState" class="form-control" name="state">
 					        <option selected>Choose...</option>
 					        <option>...</option>
 					      </select>
@@ -51,7 +58,7 @@
 					  </div>
 					  <div class="form-group">
 					    <label for="inputAddress">Pick up Address</label>
-					    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					    <input type="text" class="form-control" id="inputAddress" name="pkadress" placeholder="1234 Main St">
 					  </div>
 					   <div class="form-row">
 					   	<div class="form-group col-md-12">
