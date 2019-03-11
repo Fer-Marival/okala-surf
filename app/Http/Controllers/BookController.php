@@ -11,11 +11,12 @@ class BookController extends Controller
 {
     public function booknow()
     {
-    	return view('booking');
+    	return view('pages.booking');
     }
 
     public function booknowPost(Request $request)
     {
+
     	$this->validate($request,[
     		'name' => 'required',
     		'lastname' => 'required',
@@ -26,8 +27,8 @@ class BookController extends Controller
     		'state' => 'required',
     		'pk_adress' => 'required'
     	]);
-    	BookNow::create($request->all());
-        Mail::send('email',
+    	BookForm::create($request->all());
+        Mail::send('emails.email',
         array(
            	'name' => $request->get('name'),
     		'lastname' => $request->get('lastname'),
@@ -36,12 +37,12 @@ class BookController extends Controller
     		'country' => $request->get('country'),
     		'city' => $request->get('city'),
     		'state' => $request->get('state'),
-    		'pk_adress' => $request->get('pkadress')
+    		'pk_adress' => $request->get('pk_adress')
 
         ), function($message)
         {
         	$message->from('web@okalasurfschool.com');
-        	$message->to('furibe@marivalaccess.com', 'Admin')->subjet('new booking');
+        	$message->to('furibe@marivalaccess.com', 'Admin')->subject('new booking');
         });
         return back()->with('success', 'Thanks for contact');
     }

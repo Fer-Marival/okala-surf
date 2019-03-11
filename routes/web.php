@@ -15,13 +15,13 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/booking', function () {
-    return view('pages.booking');
-});
+// Route::get('/booking', function () {
+//     return view('pages.booking');
+// });
 Route::get('/articles', 'PageController@index');
 
 Route::post('/', 'PageController@store')->name('booking.send');
 
-Route::get('booknow', 'BookController@booknow');
-Route::post('booknow', ['as'=>'booknow.store',
+Route::get('/booking', 'BookController@booknow');
+Route::post('/booking', ['as'=>'booknow.store',
 'uses'=> 'BookController@booknowPost']);
