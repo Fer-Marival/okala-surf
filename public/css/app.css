@@ -629,6 +629,7 @@ pre code {
 }
 
 .no-gutters > .col,
+footer .no-gutters > .social-icons,
 .no-gutters > [class*=col-] {
   padding-right: 0;
   padding-left: 0;
@@ -691,6 +692,7 @@ pre code {
 .col-sm-2,
 .col-sm-1,
 .col,
+footer .social-icons,
 .col-auto,
 .col-12,
 .col-11,
@@ -710,7 +712,8 @@ pre code {
   padding-left: 15px;
 }
 
-.col {
+.col,
+footer .social-icons {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
@@ -2123,6 +2126,7 @@ textarea.form-control {
 }
 
 .form-row > .col,
+footer .form-row > .social-icons,
 .form-row > [class*=col-] {
   padding-right: 5px;
   padding-left: 5px;
@@ -10628,9 +10632,8 @@ h3 {
 
 .home {
   width: 100%;
-  height: 100vh;
-  background-color: #ccc;
-  background-image: url("/img/home.jpg");
+  height: 70vh;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -10653,17 +10656,23 @@ h3 {
   overflow: hidden;
 }
 
-.booking form .row .col {
+.booking form .row .col,
+.booking form .row footer .social-icons,
+footer .booking form .row .social-icons {
   padding-top: 10px;
   padding-bottom: 10px;
   border-left: 0.5px solid #f8fafc;
 }
 
-.booking form .row .col:nth-child(1) {
+.booking form .row .col:nth-child(1),
+.booking form .row footer .social-icons:nth-child(1),
+footer .booking form .row .social-icons:nth-child(1) {
   border-left: 0;
 }
 
-.booking form .row .col:nth-last-child(1) {
+.booking form .row .col:nth-last-child(1),
+.booking form .row footer .social-icons:nth-last-child(1),
+footer .booking form .row .social-icons:nth-last-child(1) {
   padding: 0;
 }
 
@@ -10723,7 +10732,9 @@ h3 {
   background-repeat: no-repeat;
 }
 
-#description .col {
+#description .col,
+#description footer .social-icons,
+footer #description .social-icons {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -10846,11 +10857,36 @@ footer {
 }
 
 footer .copys {
-  background-color: blue;
-  color: white;
+  color: #666;
   font-size: 10px;
   display: block;
   text-align: center;
+}
+
+footer .copys p {
+  margin-bottom: 0;
+}
+
+footer form input {
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: blue;
 }
 
 .bk-header {
@@ -10858,14 +10894,29 @@ footer .copys {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 350px;
   margin-bottom: 2em;
 }
 
 .header {
+  position: fixed;
+  top: 0;
   background-color: white;
-  height: 40px;
-  border-bottom: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #09cbea;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .logo {
+  width: 130px;
+  display: block;
+}
+
+.header .social-icons a {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+  vertical-align: middle;
 }
 
 #social {
@@ -10928,6 +10979,41 @@ footer .copys {
 
 #social .grid-item img:hover {
   opacity: 0.8;
+}
+
+.btn-hover {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 .navbar-laravel {

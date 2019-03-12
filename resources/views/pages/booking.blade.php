@@ -1,20 +1,23 @@
 @extends('layout.principal')
 @section('content')
+<div class="clear"></div>
 <div class="container-fluid">
 	<div class="bk-header"><div class="clear"></div></div>
 </div>
 <div class="booking-form">
 	<div class="container">
 		<div class="row">
-			@if ($errors->any())
-			    <div class="alert alert-danger">
-			        <ul>
-			            @foreach ($errors->all() as $error)
-			                <li>{{ $error }}</li>
-			            @endforeach
-			        </ul>
-			    </div>
-			@endif
+			<div class="col-md-12">
+				@if ($errors->any())
+				    <div class="alert alert-danger">
+				        <ul>
+				            @foreach ($errors->all() as $error)
+				                <li>{{ $error }}</li>
+				            @endforeach
+				        </ul>
+				    </div>
+				@endif
+			</div>	
 			<div class="col-md-8">
 				<form action="{{route('booknow.store')}}" method="POST" enctype="multipart/form-data" class="form">
 					@csrf
@@ -92,7 +95,7 @@
 					      </label>
 					    </div>
 					  </div>
-					  <button type="submit" class="btn btn-primary">Confirm Booking</button>
+					  <button type="submit" class="btn-hover color-9">Confirm Booking</button>
 					</form>
 			</div>
 			<div class="col-md-4">

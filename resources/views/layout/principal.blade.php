@@ -12,5 +12,12 @@
 		@yield('content')
 		@include('components.footer')
 	<script src="{!! asset('js/app.js') !!}" type="text/javascript"></script>
+	<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="526939231128929">
+</div>
 </body>
 </html>

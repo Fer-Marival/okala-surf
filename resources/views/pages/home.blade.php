@@ -1,7 +1,7 @@
 @extends('layout.principal')
 @section('content')
 	<div class="home">
-		<div class="booking">
+		<!-- <div class="booking">
 			<form class="form" action="{{route('booking.send')}}" method="POST" enctype="multipart/form-data">
 				@csrf
 			  <div class="row">
@@ -36,15 +36,90 @@
 				  </div>
 			  </div>
 			</form>
+		</div> -->
+		<div class="slider-pro" id="home-slider">
+			<div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="{{asset('img/home.jpeg')}}" />
+					<p class="sp-layer sp-black sp-padding" 
+					data-horizontal="50" data-vertical="50"
+					data-show-transition="down" data-show-delay="500">
+					Lorem ipsum dolor sit amet
+				</p>
+					<p class="sp-layer sp-white sp-padding" 
+					data-horizontal="50" data-vertical="100"
+					data-show-transition="up" data-show-delay="500">
+					consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				</div>
+			</div>
+			<div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="{{asset('img/home2.jpeg')}}" />
+					<p class="sp-layer sp-black sp-padding" 
+					data-position="bottomLeft" data-horizontal="5%" data-vertical="5%" data-width="90%" 
+					data-show-transition="up" data-show-delay="400">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				</div>
+			</div>
+			<div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="{{asset('img/girls.jpg')}}" />
+					<p class="sp-layer sp-black sp-padding"
+					data-position="bottomLeft" data-vertical="0" data-width="100%"
+					data-show-transition="up">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				</div>
+			</div>
 		</div>
 	</div>
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="service">		
+						<img src="{!!asset('img/services/3.svg')!!}" alt="">
+						<div class="title">
+							@lang('global.table')
+						</div>
+						<div class="description">
+							@lang('global.table-des')
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">		<img src="{!!asset('img/services/1.svg')!!}" alt="">
+						<div class="title">
+							@lang('global.transportation')
+						</div>
+						<div class="description">
+							@lang('global.trans-des')
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<img src="{!!asset('img/services/2.svg')!!}" alt="">
+						<div class="title">
+							@lang('global.swimmer')
+						</div>	
+						<div class="description">
+							@lang('global.swim-des')
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div id="description">
 		<div class="container">
 			<div class="row align-items-center" id="scene">
-				<div class="col" data-depth="0.2">
+				<div class="col-md-6" data-depth="0.2">
 					<picture><img src="{{asset('img/home2.jpg')}}"  alt="" class="img-fluid"></picture>
 				</div>
-				<div class="col">
+				<div class="col-md-6">
 					<div class="title">
 						<h1>Okala</h1>
 						<h2>vallarta surf school</h2>
@@ -56,44 +131,6 @@
 			</div>
 		</div>
 	</div>
-	<section class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="service">		
-						<img src="{!!asset('img/services/3.svg')!!}" alt="">
-						<div class="title">
-							Surf table inlcuded
-						</div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="service">		<img src="{!!asset('img/services/1.svg')!!}" alt="">
-						<div class="title">
-							Transportation
-						</div>
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						</div>
-					</div>					
-				</div>
-				<div class="col">
-					<div class="service">
-						<img src="{!!asset('img/services/2.svg')!!}" alt="">
-						<div class="title">
-							Swimmer
-						</div>	
-						<div class="description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<div class="clear"></div>
 	<section class="instagram">
 		<div class="container-fluid">

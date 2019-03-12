@@ -10,3 +10,11 @@ User Name: {{ $name }}
 User Email: {{ $email }}
 </p>
  
+<h2>Nueva resrevacion de:</h2>
+<h1>{{ $name }} {{ $lastname }}</h1>  
+<p>{{ $email  }}</p>
+<p>{{ $cellphone  }}</p>
+<p>{{ $country  }}</p>
+<p>{{ $city  }}</p>
+<p>{{ $state  }}</p>
+<p>{{ $pk_adress  }}</p>

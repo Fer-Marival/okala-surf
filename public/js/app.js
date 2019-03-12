@@ -76608,6 +76608,25 @@ $(document).ready(function ($) {
     fade: true
   });
 });
+$(document).ready(function ($) {
+  $('#home-slider').sliderPro({
+    width: "100%",
+    height: 500,
+    arrows: false,
+    buttons: false,
+    shuffle: true,
+    smallSize: 500,
+    mediumSize: 1000,
+    largeSize: 3000,
+    thumbnailArrows: true,
+    autoplay: true,
+    fade: true,
+    forceSize: 'fullWidth',
+    slideDistance: 0,
+    imageScaleMode: 'home',
+    autoHeight: true
+  });
+});
 var scene = document.getElementById('scene'); // var parallaxInstance = new Parallax(scene);
 //fixed nav bar
 
@@ -76647,6 +76666,23 @@ var feed = new Instafeed({
 });
 feed.run();
 
+window.fbAsyncInit = function () {
+  FB.init({
+    xfbml: true,
+    version: 'v3.2'
+  });
+};
+
+(function (d, s, id) {
+  var js,
+      fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+
 /***/ }),
 
 /***/ "./resources/sass/app.scss":
@@ -76667,8 +76703,8 @@ feed.run();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
