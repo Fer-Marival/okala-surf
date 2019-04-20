@@ -7,14 +7,21 @@ h1{
 	letter-spacing: 2px;
 }
 h2{
-	color: $blue;
+	//color: $blue;
 	font-family: $okala-font;
+	background: -webkit-linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
-h3{	color: $blue;
+h3{	
+	//color: $blue;
 	text-align: center;
 	line-height: 1.8;
 	padding-top: 15px;
 	font-family: $okala-font;
+	background: -webkit-linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 .clear{height: 100px; }
 .home{
@@ -24,6 +31,13 @@ h3{	color: $blue;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	svg{
+		position: absolute;
+    	z-index: 1;
+    	bottom: -1px;
+    	transform: rotate(180deg);
+	}
 }
 .booking{
 	@extend .shadow-lg;
@@ -79,16 +93,23 @@ h3{	color: $blue;
 	}
 }
 .services{
-	margin: 2em auto;
-	width: 90%;
+	background-color: $blue;
 }
 .service{
 	padding-top: 10px;
+	margin: 1em auto;
+	.description{
+		color: white;
+	}
+	h3{
+		color: white;
+	}
 	img{
 		width: 80px;
-		fill: $blue;
+		fill: white;
 	}
 	.title{
+		color: navy;
 		font-weight: bold;
 		font-size: 1.2rem;
 	}
@@ -154,7 +175,6 @@ h3{	color: $blue;
 	background-color: $body-bg;
 	#my-slider{
 		text-align: center;
-		padding-top: 10%;
 	}
 	section{
 		width: 80%;
@@ -240,7 +260,6 @@ h3{	color: $blue;
 footer{
 	background-image: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
 	background-color: #1D6FA3;
-	padding-top: 50px;
 	margin-top: 2em;
 	.copys{
 		color:#666;
@@ -274,6 +293,10 @@ footer{
 			color:blue;
 		}
 	}
+		svg path {
+	    fill: #FFF;
+	}
+		
 }
 .bk-header{
 	background-image: url('/img/girls.jpg');
@@ -289,7 +312,7 @@ footer{
 	background-color: white;
 	border-bottom: .5px solid $blue;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 	.logo{
 		width: 130px;
 		display: block;

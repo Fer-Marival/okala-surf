@@ -1,85 +1,35 @@
 @extends('layout.principal')
 @section('content')
 	<div class="home">
-		<!-- <div class="booking">
-			<form class="form" action="{{route('booking.send')}}" method="POST" enctype="multipart/form-data">
-				@csrf
-			  <div class="row">
-			  	<div class="col">
-			    	<label for="day">Day</label>
-			     	<input type="text" name="day" class="form-control" placeholder="Select Day">
-			    </div>
-			    <div class="col">
-			    	<label for="name">Time</label>
-			     	<input type="time" name="name" class="form-control" placeholder="First name">
-			    </div>
-			    <div class="col">
-			    	<label for="">Adultos</label>
-			      <select>
-					  <option value="1">1</option>
-					  <option value="2">2</option>
-					  <option value="3">3</option>
-					  <option value="4">4</option>
-					</select>
-			    </div>
-			  <div class="col">
-			  	<label for="">Niños</label>
-			     <select>
-				  <option value="1">1</option>
-				  <option value="2">2</option>
-				  <option value="3">3</option>
-				  <option value="4">4</option>
-				</select>
-			    </div>
-			     <div class="col">
-				  	<button>Reserve</button>
-				  </div>
-			  </div>
-			</form>
-		</div> -->
 		<div class="slider-pro" id="home-slider">
 			<div class="sp-slides">
 				<div class="sp-slide">
 					<img class="sp-image" src="{{asset('img/home.jpeg')}}" />
-					<p class="sp-layer sp-black sp-padding" 
-					data-horizontal="50" data-vertical="50"
-					data-show-transition="down" data-show-delay="500">
-					Lorem ipsum dolor sit amet
-				</p>
-					<p class="sp-layer sp-white sp-padding" 
-					data-horizontal="50" data-vertical="100"
-					data-show-transition="up" data-show-delay="500">
-					consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
 				</div>
 			</div>
 			<div class="sp-slides">
 				<div class="sp-slide">
 					<img class="sp-image" src="{{asset('img/home2.jpeg')}}" />
-					<p class="sp-layer sp-black sp-padding" 
-					data-position="bottomLeft" data-horizontal="5%" data-vertical="5%" data-width="90%" 
-					data-show-transition="up" data-show-delay="400">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
 				</div>
 			</div>
 			<div class="sp-slides">
 				<div class="sp-slide">
 					<img class="sp-image" src="{{asset('img/girls.jpg')}}" />
-					<p class="sp-layer sp-black sp-padding"
-					data-position="bottomLeft" data-vertical="0" data-width="100%"
-					data-show-transition="up">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
 				</div>
 			</div>
 		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 193">
+			<path fill="#09cbea" d="M1175 131.2c0 0-81-89.4-224.3-103.4S713 72 665 97c-86 46-148 63-271 7C221.7 25.5 56 104.5-4 197.4 -4 58.7-3.3 0.3-3.3 0.3L1175 0V131.2z"></path>
+		</svg>
 	</div>
 	<section class="services">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12">
+					<h3>We included</h3>
+				</div>
 				<div class="col-md-4">
-					<div class="service">		
+					<div class="service">	
 						<img src="{!!asset('img/services/3.svg')!!}" alt="">
 						<div class="title">
 							@lang('global.table')
@@ -90,7 +40,8 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="service">		<img src="{!!asset('img/services/1.svg')!!}" alt="">
+					<div class="service">
+						<img src="{!!asset('img/services/1.svg')!!}" alt="">
 						<div class="title">
 							@lang('global.transportation')
 						</div>
@@ -113,6 +64,11 @@
 			</div>
 		</div>
 	</section>
+	<div id="wave">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 193">
+			<path fill="#09cbea" d="M1175 131.2c0 0-81-89.4-224.3-103.4S713 72 665 97c-86 46-148 63-271 7C221.7 25.5 56 104.5-4 197.4 -4 58.7-3.3 0.3-3.3 0.3L1175 0V131.2z"></path>
+		</svg>
+	</div>	
 	<div id="description">
 		<div class="container">
 			<div class="row align-items-center" id="scene">
@@ -122,10 +78,11 @@
 				<div class="col-md-6">
 					<div class="title">
 						<h1>Okala</h1>
-						<h2>vallarta surf school</h2>
+						<h2>Vallarta surf school</h2>
 					</div>
 					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit molestias, rem. Odit laudantium voluptates reprehenderit totam rerum, quisquam eligendi dolorem dolorum adipisci doloribus, vel iste quibusdam consectetur numquam officia.
+						Okala Surf School, la escuela especializada en enseñarte a dominar las olas, deja de mirar a los demás como se divierten y aprende esta hermosa disciplina acuatíca, en las hermosas playas de la costa de bahía de banderas y Cabo Corriente. <br /><br />
+						<a href="/booking" class="btn-hover color-9">Reserva tu cita</a>
 					</div>
 				</div>
 			</div>
@@ -225,25 +182,33 @@
 	</section>
 	<div class="clear"></div>
 	<div class="coaches">
-		<h3 class="title">Our Professionals Coaches</h3>
+		<h3 class="title">Okala Coaches</h3>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col">
 					<div class="coach">
-					<img src="{!!asset('img/coach/jona.jpg')!!}" class="img-fluid" alt="">
-				</div></div>
+						<img src="{!!asset('img/coach/jona.jpg')!!}" class="img-fluid" alt="">
+					</div>
+				</div>
 				<div class="col"><div class="coach">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-				</div></div>
-				<div class="col"><div class="coach">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-				</div></div>
-				<div class="col"><div class="coach">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-				</div></div>
-				<div class="col"><div class="coach">
-					<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
-				</div></div>
+						<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="col">
+					<div class="coach">
+						<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+					</div>	
+				</div>
+				<div class="col">
+					<div class="coach">
+						<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="col">
+					<div class="coach">
+						<img src="{!!asset('img/coach/1.jpeg')!!}" class="img-fluid" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
