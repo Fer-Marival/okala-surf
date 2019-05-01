@@ -76582,13 +76582,10 @@ __webpack_require__.r(__webpack_exports__);
 $(document).ready(function ($) {
   $('#my-slider').sliderPro({
     width: 960,
-    height: 500,
+    height: 330,
     arrows: true,
     buttons: false,
     shuffle: true,
-    smallSize: 500,
-    mediumSize: 1000,
-    largeSize: 3000,
     thumbnailArrows: true,
     autoplay: true
   });
@@ -76703,8 +76700,8 @@ window.fbAsyncInit = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

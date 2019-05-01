@@ -10614,16 +10614,20 @@ h1 {
 }
 
 h2 {
-  color: #09cbea;
   font-family: "Rock Salt", cursive;
+  background: -webkit-linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
-  color: #09cbea;
   text-align: center;
   line-height: 1.8;
   padding-top: 15px;
   font-family: "Rock Salt", cursive;
+  background: -webkit-linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .clear {
@@ -10637,6 +10641,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.home svg {
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .booking {
@@ -10703,20 +10716,29 @@ footer .booking form .row .social-icons:nth-last-child(1) {
 }
 
 .services {
-  margin: 2em auto;
-  width: 90%;
+  background-color: #09cbea;
 }
 
 .service {
   padding-top: 10px;
+  margin: 1em auto;
+}
+
+.service .description {
+  color: white;
+}
+
+.service h3 {
+  color: white;
 }
 
 .service img {
   width: 80px;
-  fill: #09cbea;
+  fill: white;
 }
 
 .service .title {
+  color: navy;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -10760,7 +10782,6 @@ footer #description .social-icons {
 
 .coments #my-slider {
   text-align: center;
-  padding-top: 10%;
 }
 
 .coments section {
@@ -10852,7 +10873,6 @@ footer #description .social-icons {
 footer {
   background-image: linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
   background-color: #1D6FA3;
-  padding-top: 50px;
   margin-top: 2em;
 }
 
@@ -10889,6 +10909,10 @@ footer a:hover {
   color: blue;
 }
 
+footer svg path {
+  fill: #FFF;
+}
+
 .bk-header {
   background-image: url("/img/girls.jpg");
   background-size: cover;
@@ -10904,7 +10928,7 @@ footer a:hover {
   background-color: white;
   border-bottom: 0.5px solid #09cbea;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header .logo {
