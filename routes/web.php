@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+
 
 // Route::get('/booking', function () {
 //     return view('pages.booking');
@@ -25,3 +23,18 @@ Route::post('/', 'PageController@store')->name('booking.send');
 Route::get('/booking', 'BookController@booknow');
 Route::post('/booking', ['as'=>'booknow.store',
 'uses'=> 'BookController@booknowPost']);
+
+Route::group(['middleware' => ['web']], function () {
+ 
+    Route::get('/', function () {
+    	return view('pages.home');
+	});
+ 
+    Route::get('lang/{lang}', function ($lang) {
+        session(['lang' => $lang]);
+        return \Redirect::back();
+    })->where([
+        'lang' => 'en|es'
+    ]);
+ 
+});

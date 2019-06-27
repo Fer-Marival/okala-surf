@@ -31,7 +31,7 @@ $( document ).ready(function( $ ) {
 $( document ).ready(function( $ ) {
 		$( '#home-slider' ).sliderPro({
 			width: "100%",
-			height: 500,
+			height: 700,
 			arrows: false,
 			buttons: false,
 			shuffle: true,
