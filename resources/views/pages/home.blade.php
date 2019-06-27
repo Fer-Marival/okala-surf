@@ -99,11 +99,11 @@
 			  <div class="card p-3">
 			    <blockquote class="blockquote mb-0 card-body">
 			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-			      <footer class="blockquote-footer">
+			      <div class="blockquote-footer">
 			        <small class="text-muted">
 			          Someone famous in <cite title="Source Title">Source Title</cite>
 			        </small>
-			      </footer>
+			      </div>
 			    </blockquote>
 			  </div>
 			  <div class="card">
@@ -112,24 +112,24 @@
 			  <div class="card bg-primary text-white text-center p-3">
 			    <blockquote class="blockquote mb-0">
 			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-			      <footer class="blockquote-footer text-white">
+			      <div class="blockquote-footer text-white">
 			        <small>
 			          Someone famous in <cite title="Source Title">Source Title</cite>
 			        </small>
-			      </footer>
+			      </div>
 			    </blockquote>
 			  </div>
 			  <div class="card">
-			   	<img src="{!!asset('img/coach/1.jpeg')!!}" class="card-img-top" alt="...">
+			   	<img src="{!!asset('img/avent1.jpg')!!}" class="card-img-top" alt="...">
 			   </div>
 			  <div class="card">
-			    <img src="{!!asset('img/coach/1.jpeg')!!}" class="card-img-top" alt="...">
+			    <img src="{!!asset('img/lesson.jpg')!!}" class="card-img-top" alt="...">
 			  </div>
 			  <div class="card">
 			   	<img src="{!!asset('img/events/1.jpeg')!!}" class="card-img-top" alt="...">
 			  </div>
 			  <div class="card">
-			  	<img src="{!!asset('img/coach/1.jpeg')!!}" class="card-img-top" alt="...">
+			  	<img src="{!!asset('img/booking3.jpeg')!!}" class="card-img-top" alt="...">
 			  </div>
 			</div>
 		</div>
