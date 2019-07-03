@@ -76626,12 +76626,14 @@ $(document).ready(function ($) {
 });
 var scene = document.getElementById('scene'); // var parallaxInstance = new Parallax(scene);
 //fixed nav bar
+// window.addEventListener('scroll',()=>{
+// 	let scroll = document.documentElement.scrollTop || document.body.scrollTop,
+// 		 menu = document.getElementsByClassName('booking')
+// 	scroll >= 400
+// 		? menu[0].classList.add('fixed')
+// 		: menu[0].classList.remove('fixed')
+// })
 
-window.addEventListener('scroll', function () {
-  var scroll = document.documentElement.scrollTop || document.body.scrollTop,
-      menu = document.getElementsByClassName('booking');
-  scroll >= 400 ? menu[0].classList.add('fixed') : menu[0].classList.remove('fixed');
-});
 $(function () {
   $('input[name="days"]').daterangepicker();
 });
@@ -76644,8 +76646,8 @@ var Masonry = __webpack_require__(/*! masonry-layout */ "./node_modules/masonry-
 
 var feed = new Instafeed({
   get: 'user',
-  userId: 7493294533,
-  accessToken: '7493294533.1677ed0.2c006cb41f694755b99942cb17103001',
+  userId: 12629740869,
+  accessToken: '12629740869.1677ed0.d02ce1362e60485f986d3b13a61fc271',
   resolution: 'standard_resolution',
   template: '<div class="grid-item col"><a href="{{link}}" title="{{caption}}" data-fancybox="gallery" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
   limit: 9,
@@ -76700,8 +76702,8 @@ window.fbAsyncInit = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/fernandouribe/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

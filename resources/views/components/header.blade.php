@@ -17,7 +17,7 @@
 				</picture></a>
 			</div>
 			<div class="col">
-				<a href="/booking" class="btn-hover color-9">Reserva tu cita</a>
+				<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 			</div>
 		</div>
 	</div>

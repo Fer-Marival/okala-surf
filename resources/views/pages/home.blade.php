@@ -18,6 +18,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="wave">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 193">
 			<path fill="#09cbea" d="M1175 131.2c0 0-81-89.4-224.3-103.4S713 72 665 97c-86 46-148 63-271 7C221.7 25.5 56 104.5-4 197.4 -4 58.7-3.3 0.3-3.3 0.3L1175 0V131.2z"></path>
 		</svg>
@@ -81,8 +83,8 @@
 						<h2>Vallarta surf school</h2>
 					</div>
 					<div class="content">
-						Okala Surf School, la escuela especializada en enseñarte a dominar las olas, deja de mirar a los demás como se divierten y aprende esta hermosa disciplina acuatíca, en las hermosas playas de la costa de bahía de banderas y Cabo Corriente. <br /><br />
-						<a href="/booking" class="btn-hover color-9">Reserva tu cita</a>
+						@lang('global.page-description') <br /><br />
+						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 					</div>
 				</div>
 			</div>
@@ -181,7 +183,7 @@
 		</div>
 	</section>
 	<div class="clear"></div>
-	<div class="coaches">
+	{{--  <div class="coaches">
 		<h3 class="title">Okala Coaches</h3>
 		<div class="container">
 			<div class="row justify-content-center">
@@ -211,7 +213,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>  --}}
 	<div class="clear"></div>
 	<section class="events">
 		<div class="container">
