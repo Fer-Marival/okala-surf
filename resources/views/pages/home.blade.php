@@ -80,11 +80,7 @@
 						<h2>@lang('global.subname')</h2>
 					</div>
 					<div class="content">
-<<<<<<< HEAD
-						@lang('global.page-description') <br /><br />
-=======
 							@lang('global.description')<br /><br />
->>>>>>> c136b4fc0e4dfe76903a0c194af428001b215482
 						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 					</div>
 				</div>
@@ -94,34 +90,14 @@
 	<div class="clear"></div>
 	<section class="instagram">
 		<div class="container-fluid">
-			<h3>Our Happy Moments</h3>
+			<h3>@lang('global.moments')</h3>
 		<div class="row">
 			<div class="card-columns">
 			  <div class="card">
 			    	<img src="{!!asset('img/girls.jpg')!!}" class="card-img-top" alt="...">
 			  </div>
-			  <div class="card p-3">
-			    <blockquote class="blockquote mb-0 card-body">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-			      <div class="blockquote-footer">
-			        <small class="text-muted">
-			          Someone famous in <cite title="Source Title">Source Title</cite>
-			        </small>
-			      </div>
-			    </blockquote>
-			  </div>
 			  <div class="card">
 			    <img src="{!!asset('img/girls2.jpg')!!}" class="card-img-top" alt="...">
-			  </div>
-			  <div class="card bg-primary text-white text-center p-3">
-			    <blockquote class="blockquote mb-0">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-			      <div class="blockquote-footer text-white">
-			        <small>
-			          Someone famous in <cite title="Source Title">Source Title</cite>
-			        </small>
-			      </div>
-			    </blockquote>
 			  </div>
 			  <div class="card">
 			   	<img src="{!!asset('img/avent1.jpg')!!}" class="card-img-top" alt="...">
@@ -141,7 +117,7 @@
 	</section>
 	<div class="clear"></div>
 	<div id="social">
-			<h3>Síguenos en Instagram <span>&#x02992;</span></h3>
+			<h3>@lang('global.follow')<span>&#x02992;</span></h3>
 			<div id="instafeed" class='grid row'>
 			  	<div class="grid-sizer"></div>
 			</div>
@@ -149,7 +125,7 @@
 	<section class="coments">
 		<div class="container">
 			<div class="row">
-				<div class="col"><h3 class="title">Reviews</h3></div>
+				<div class="col"><h3 class="title">@lang('global.review')</h3></div>
 				<div class="col-md-12">
 						<div class="slider-pro" id="my-slider">
 							<div class="sp-slides">
@@ -218,8 +194,7 @@
 	<div class="clear"></div>
 	<section class="events">
 		<div class="container">
-			<h2>Our participations for create a</h2>
-			<h3>better world</h3>
+			<h2>@lang('global.events')</h2>
 			<div class="row">
 				<div class="col">
 					<section class="event">
@@ -247,7 +222,8 @@
 	</section>
 	<div class="contact">
 		<div class="container">
-			<h3>Contact us! 🤙</h3>
+			<h3>@lang('global.contact') 🤙</h3>
+			{{-- 
 			<div class="row">
 				<div class="col">
 					<div class="slider-pro" id="booking-slider">
@@ -276,7 +252,7 @@
 					</div>
 				</div>
 				<div class="col">
-				<form>
+					<form>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label for="inputEmail4">Name</label>
@@ -317,10 +293,11 @@
 				    </div>
 				  </div>
 				  <button type="submit" class="btn btn-primary">Send Message</button>
-				</form>
-			</div>
-			</div>
+					</form>
+				</div>
 			
+			</div>
+			--}}
 		</div>
 	</div>
 @endsection
