@@ -32,12 +32,12 @@ h3{
 	background-size: cover;
 	background-position: center center;
 	position: relative;
-	svg{
-		position: absolute;
-    	z-index: 1;
-    	bottom: -1px;
-    	transform: rotate(180deg);
-	}
+}
+.wave svg{
+	position: absolute;
+	z-index: 1;
+	bottom: -1px;
+	transform: rotate(180deg);
 }
 .wave{
 		svg{

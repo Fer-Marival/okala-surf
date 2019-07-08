@@ -27,9 +27,6 @@
 	<section class="services">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h3>We included</h3>
-				</div>
 				<div class="col-md-4">
 					<div class="service">	
 						<img src="{!!asset('img/services/3.svg')!!}" alt="">
@@ -80,10 +77,14 @@
 				<div class="col-md-6">
 					<div class="title">
 						<h1>Okala</h1>
-						<h2>Vallarta surf school</h2>
+						<h2>@lang('global.subname')</h2>
 					</div>
 					<div class="content">
+<<<<<<< HEAD
 						@lang('global.page-description') <br /><br />
+=======
+							@lang('global.description')<br /><br />
+>>>>>>> c136b4fc0e4dfe76903a0c194af428001b215482
 						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 					</div>
 				</div>

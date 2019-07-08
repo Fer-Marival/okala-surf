@@ -10644,7 +10644,7 @@ h3 {
   position: relative;
 }
 
-.home svg {
+.wave svg {
   position: absolute;
   z-index: 1;
   bottom: -1px;
