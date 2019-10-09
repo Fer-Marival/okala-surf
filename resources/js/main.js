@@ -1,5 +1,16 @@
 
 // $( '#my-slider' ).sliderPro();
+$( document ).ready(function( $ ) {
+		$( '.slider' ).sliderPro({
+			width: 350,
+			height: 330,
+			arrows: true,
+			buttons: false,
+			shuffle: true,
+			thumbnailArrows: true,
+			autoplay: true
+		});
+	});
 
 $( document ).ready(function( $ ) {
 		$( '#my-slider' ).sliderPro({

@@ -72,92 +72,15 @@
 		<div class="container">
 			<div class="row align-items-center" id="scene">
 				<div class="col-md-6" data-depth="0.2">
-					<div class="slider">
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
-							</div>
-						</div>
-					</div>
+					<picture><img src="{{asset('img/home2.jpg')}}"  alt="" class="img-fluid"></picture>
 				</div>
 				<div class="col-md-6">
 					<div class="title">
 						<h1>Okala</h1>
-						<h2>Surflessons</h2>
+						<h2>@lang('global.subname')</h2>
 					</div>
 					<div class="content">
-							@lang('global.description')<br /><br />
-						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
-					</div>
-				</div>
-			</div>
-			<div class="row align-items-center" id="scene">
-				<div class="col-md-6">
-					<div class="title">
-						<h2>Supstandup</h2>
-					</div>
-					<div class="content">
-							@lang('global.description')<br /><br />
-						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
-					</div>
-				</div>
-				<div class="col-md-6" data-depth="0.2">
-					<div class="slider">
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			<div class="row align-items-center" id="scene">
-				<div class="col-md-6" data-depth="0.2">
-					<div class="slider">
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
-							</div>
-						</div>
-						<div class="sp-slides">
-							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="title">
-						<h2>Snorkel</h2>
-					</div>
-					<div class="content">
-							@lang('global.description')<br /><br />
+						@lang('global.description')<br /><br />
 						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 					</div>
 				</div>
