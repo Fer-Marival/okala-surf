@@ -4,17 +4,19 @@
 		<div class="slider-pro" id="home-slider">
 			<div class="sp-slides">
 				<div class="sp-slide">
-					<img class="sp-image" src="{{asset('img/home.jpeg')}}" />
+					<img class="sp-image" src="{{asset('img/slide-home/1.jpg')}}" />
 				</div>
-			</div>
-			<div class="sp-slides">
 				<div class="sp-slide">
-					<img class="sp-image" src="{{asset('img/home2.jpeg')}}" />
+					<img class="sp-image" src="{{asset('img/slide-home/2.jpg')}}" />
 				</div>
-			</div>
-			<div class="sp-slides">
 				<div class="sp-slide">
-					<img class="sp-image" src="{{asset('img/girls.jpg')}}" />
+					<img class="sp-image" src="{{asset('img/slide-home/3.jpg')}}" />
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="{{asset('img/slide-home/4.jpg')}}" />
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="{{asset('img/slide-home/5.jpg')}}" />
 				</div>
 			</div>
 		</div>
@@ -69,136 +71,148 @@
 		</svg>
 	</div>	 --}}
 	<div id="description">
-		<div class="container">
+		<div class="container-cool">
 			<div class="row align-items-center" id="scene">
 				<div class="col-md-6" data-depth="0.2">
 					<div class="slider">
 						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/surf/surf1.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/surf/surf2.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/surf/surf5.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/surf/surf12.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/surf/surf15.jpeg')}}" />
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="title">
-						<h1>Okala</h1>
-						<h2>Surflessons</h2>
+						<h4>Surflessons</h4>
 					</div>
 					<div class="content">
-							@lang('global.description')<br /><br />
-						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							Surf  and adventure school in puerto vallarta with tours all around the bay (pv, Mita, sayulita) with perfect waves for all different levels. practice safe and surrounded by nature.<br /><br />
+						<div class="btn-group">
+								<a href="/surf-lesson" class="btn-hover btn-rounder">See details</a>
+								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center" id="scene">
+			<div class="row align-items-center gray">
 				<div class="col-md-6">
 					<div class="title">
-						<h2>Supstandup</h2>
+						<h4>Supstandup</h4>
 					</div>
 					<div class="content">
-							@lang('global.description')<br /><br />
-						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							Book and get to know our routes for sup and live a magical and relaxing experience, padding and appreciating the beauty of los Arcos de mismaloya while you exercise a bit.<br /><br />
+						<div class="btn-group">
+								<a href="/supstandup" class="btn-hover btn-rounder">See details</a>
+								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							</div>
 					</div>
 				</div>
-				<div class="col-md-6" data-depth="0.2">
+				<div class="col-md-6">
 					<div class="slider">
 						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup1.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup13.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup15.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup5.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup8.jpeg')}}" />
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			<div class="row align-items-center" id="scene">
+			<div class="row align-items-center">
 				<div class="col-md-6" data-depth="0.2">
 					<div class="slider">
 						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/snorkel/snorkel1.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/home2.jpeg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/snorkel/snorkel12.jpeg')}}" />
 							</div>
-						</div>
-						<div class="sp-slides">
 							<div class="sp-slide">
-								<img class="sp-image img-fluid" src="{{asset('img/girls.jpg')}}" />
+								<img class="sp-image img-fluid" src="{{asset('img/snorkel/snorkel15.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/snorkel/snorkel5.jpeg')}}" />
+							</div>
+							<div class="sp-slide">
+								<img class="sp-image img-fluid" src="{{asset('img/snorkel/snorkel8.jpeg')}}" />
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="title">
-						<h2>Snorkel</h2>
+						<h4>Snorkel</h4>
 					</div>
 					<div class="content">
-							@lang('global.description')<br /><br />
-						<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							Come  look and enjoy the marine life surrounded by nature,  mountains and crystal clear water in the south coast of Puerto vallarta in our snorkel tour <br /><br />
+							<div class="btn-group">
+								<a href="/snorkel" class="btn-hover btn-rounder">See details</a>
+								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="clear"></div>
-	<section class="instagram">
+	{{-- <section class="instagram">
 		<div class="container-fluid">
 			<h3>@lang('global.moments')</h3>
-		<div class="row">
-			<div class="card-columns">
-			  <div class="card">
-			    	<img src="{!!asset('img/girls.jpg')!!}" class="card-img-top" alt="...">
-			  </div>
-			  <div class="card">
-			    <img src="{!!asset('img/girls2.jpg')!!}" class="card-img-top" alt="...">
-			  </div>
-			  <div class="card">
-			   	<img src="{!!asset('img/avent1.jpg')!!}" class="card-img-top" alt="...">
-			   </div>
-			  <div class="card">
-			    <img src="{!!asset('img/lesson.jpg')!!}" class="card-img-top" alt="...">
-			  </div>
-			  <div class="card">
-			   	<img src="{!!asset('img/events/1.jpeg')!!}" class="card-img-top" alt="...">
-			  </div>
-			  <div class="card">
-			  	<img src="{!!asset('img/booking3.jpeg')!!}" class="card-img-top" alt="...">
-			  </div>
+			<div class="row">
+				<div class="card-columns">
+				  <div class="card">
+				    	<img src="{!!asset('img/girls.jpg')!!}" class="card-img-top" alt="...">
+				  </div>
+				  <div class="card">
+				    <img src="{!!asset('img/girls2.jpg')!!}" class="card-img-top" alt="...">
+				  </div>
+				  <div class="card">
+				   	<img src="{!!asset('img/avent1.jpg')!!}" class="card-img-top" alt="...">
+				   </div>
+				  <div class="card">
+				    <img src="{!!asset('img/lesson.jpg')!!}" class="card-img-top" alt="...">
+				  </div>
+				  <div class="card">
+				   	<img src="{!!asset('img/events/1.jpeg')!!}" class="card-img-top" alt="...">
+				  </div>
+				  <div class="card">
+				  	<img src="{!!asset('img/booking3.jpeg')!!}" class="card-img-top" alt="...">
+				  </div>
+				</div>
 			</div>
 		</div>
-		</div>
-	</section>
-	<div class="clear"></div>
+	</section> --}}
 	<div id="social">
 			<h3>@lang('global.follow')<span>&#x02992;</span></h3>
 			<div id="instafeed" class='grid row'>
 			  	<div class="grid-sizer"></div>
 			</div>
-		</div>
+	</div>
 	<section class="coments">
 		<div class="container">
 			<div class="row">
