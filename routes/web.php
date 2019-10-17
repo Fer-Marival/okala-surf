@@ -21,8 +21,14 @@ Route::get('/articles', 'PageController@index');
 Route::post('/', 'PageController@store')->name('booking.send');
 
 Route::get('/booking', 'BookController@booknow');
-Route::post('/booking', ['as'=>'booknow.store',
-'uses'=> 'BookController@booknowPost']);
+Route::post('mail', function (\Illuminate\Http\Request $request ,  \Illuminate\Mail\Mailer $mailer){
+	$mailer->to('furibe@marivalaccess.com')
+			->send(new \App\Mail\ContactMail($request));
+	return redirect('/booking')->with('message', 'Gracias por contáctarnos, pronto recibirá respuesta.');
+})-> name('enviaremail');
+
+//Route::post('/booking', ['as'=>'booknow.store',
+//'uses'=> 'BookController@booknowPost']);
 
 Route::group(['middleware' => ['web']], function () {
  
