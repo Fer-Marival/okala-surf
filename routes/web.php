@@ -35,6 +35,15 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
     	return view('pages.home');
 	});
+	Route::get('/snorkel', function () {
+    	return view('pages.snorkel');
+	});
+	Route::get('/supstandup', function () {
+    	return view('pages.sup');
+	});
+	Route::get('/surf-lesson', function () {
+    	return view('pages.surflesson');
+	});
  
     Route::get('lang/{lang}', function ($lang) {
         session(['lang' => $lang]);

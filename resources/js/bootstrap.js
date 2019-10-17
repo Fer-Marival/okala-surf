@@ -15,7 +15,7 @@ try {
 
     window.sliderPro = require('slider-pro');
     window.daterange = require('daterangepicker');
-    window.insta = require('instafeed');
+    window.insta = require('instafeed.js');
     window.imagesloaded = require('imagesLoaded');
     window.masonry= require('masonry-layout');
 

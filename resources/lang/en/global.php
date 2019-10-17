@@ -3,7 +3,18 @@
 return [
     'welcome' => 'Welcome to our application',
 
-    //servics:
+    'book' => 'Book a session',
+
+    'page-description' => 'Okala Surf School, the school specialized in teaching you to master the waves, stop looking at others as they have fun and learn this beautiful aquatic discipline, on the beautiful beaches of the coast of Bahía de Banderas and Cabo Corriente.',
+
+    //titulos:
+    'included' => 'We included',
+    'moments' => 'Our Happy Moments',
+    'follow'=>'Síguenos en Instagram',
+    'reviews' => 'Reviews',
+    'events' => 'Our participations for create a better world',
+    'contact' => 'Contact us!',
+
     'table' => 'Surfboard inlcuded',
     'table-des' => 'Forget about carrying the board, we have the best team for you to learn to Surf bro.',
     'transportation' => 'Transportation',
@@ -12,8 +23,8 @@ return [
     'swim-des' =>'Hey bro, do not spend on flower bathing suits, the lycra is on our side so you can enjoy your class without worries.',
     'subname' => 'Vallarta surf school',
     'description' => 'Okala Surf School, the school specialized in teaching you to master the waves, stop looking at others as they have fun and learn this beautiful aquatic discipline, on the beautiful beaches of the coast of Bahía de Banderas and Cabo Corriente.',
-     //botones
-    'book' => 'Book a date',
+     
+     //botone
     'send' => 'Send message',
     'languaje' => 'Languaje',
 ];
