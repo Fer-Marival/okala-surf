@@ -469,3 +469,26 @@ footer{
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
+@media (max-width:767px){
+	#description .col-md-6{
+		margin: 1em 0;
+	}
+	.header .container {
+	    width: 100%;
+	    max-width: 100%;
+	}
+	#home-slider{
+		margin-top: 90px;
+	}
+}
+@media (max-width:630px){
+	.header .social-icons a i {
+	    font-size: 20px;
+	}
+	#home-slider{
+		margin-top: 90px;
+	}
+}
+@media (max-width: 500px) {
+
+}
