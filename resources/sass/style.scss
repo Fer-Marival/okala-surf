@@ -36,6 +36,9 @@ h3{
 	background-position: center center;
 	position: relative;
 }
+#home-slider{
+	margin-top: 90px!important;
+}
 .wave svg{
 	position: absolute;
 	z-index: 1;
@@ -162,6 +165,11 @@ h3{
 		margin: auto;
 		width: 90%;
 	}
+}
+.container-cool{
+	max-width: 1440px;
+	margin: auto;
+	width: 90%;
 }
 .coaches{
 	.coach{
@@ -469,6 +477,9 @@ footer{
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
+.xs-fr{
+	float: right;
+}
 @media (max-width:767px){
 	#description .col-md-6{
 		margin: 1em 0;
@@ -480,15 +491,18 @@ footer{
 	#home-slider{
 		margin-top: 90px;
 	}
+	.hidden{
+		display:none;
+	}
+
 }
 @media (max-width:630px){
 	.header .social-icons a i {
 	    font-size: 20px;
 	}
-	#home-slider{
-		margin-top: 90px;
-	}
 }
-@media (max-width: 500px) {
-
+@media (max-width: 457px) {
+	.btn-hover{
+		width: auto;
+	}
 }

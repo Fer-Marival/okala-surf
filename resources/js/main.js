@@ -93,7 +93,8 @@ var feed = new Instafeed({
       var msnry = new Masonry(elem, {
         columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
-        percentPosition: true
+        percentPosition: true,
+        fitWidth: true
       });
     });
   }

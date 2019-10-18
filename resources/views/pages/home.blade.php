@@ -108,19 +108,7 @@
 				</div>
 			</div>
 			<div class="row align-items-center gray">
-				<div class="col-md-6">
-					<div class="title">
-						<h4>Supstandup</h4>
-					</div>
-					<div class="content">
-							Book and get to know our routes for sup and live a magical and relaxing experience, padding and appreciating the beauty of los Arcos de mismaloya while you exercise a bit.<br /><br />
-						<div class="btn-group">
-								<a href="/supstandup" class="btn-hover btn-rounder">See details</a>
-								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
-							</div>
-					</div>
-				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 order-md-12">
 					<div class="slider">
 						<div class="sp-slides">
 							<div class="sp-slide">
@@ -139,6 +127,18 @@
 								<img class="sp-image img-fluid" src="{{asset('img/SUP/sup8.jpeg')}}" />
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-6 order-md-1">
+					<div class="title">
+						<h4>Supstandup</h4>
+					</div>
+					<div class="content">
+							Book and get to know our routes for sup and live a magical and relaxing experience, padding and appreciating the beauty of los Arcos de mismaloya while you exercise a bit.<br /><br />
+						<div class="btn-group">
+								<a href="/supstandup" class="btn-hover btn-rounder">See details</a>
+								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+							</div>
 					</div>
 				</div>
 			</div>
