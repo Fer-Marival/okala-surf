@@ -480,6 +480,35 @@ footer{
 .xs-fr{
 	float: right;
 }
+#tab-bar{
+	display: none;
+	width: 100%;
+	background-color: #f9f9f9;
+	position: fixed;
+	bottom: 0;
+	height: 70px;
+	z-index: 100;
+	.row{
+		height: 100%;
+	}
+	.col{
+		text-align: center;
+		height: 100%;
+    	line-height: 4;
+		&:hover{
+			background-color: white;
+		}
+		i{
+			font-size: 20pt;
+		}
+		.btn-hover{
+			border-radius: 0;
+			box-shadow: none!important;
+		}
+	}
+
+}
+
 @media (max-width:767px){
 	#description .col-md-6{
 		margin: 1em 0;
@@ -493,6 +522,12 @@ footer{
 	}
 	.hidden{
 		display:none;
+	}
+	#tab-bar{
+		display: block;
+	}
+	.fb_dialog{
+		bottom: 70pt!important;
 	}
 
 }

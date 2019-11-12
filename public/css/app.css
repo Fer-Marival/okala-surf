@@ -11117,6 +11117,47 @@ footer #wave {
   float: right;
 }
 
+#tab-bar {
+  display: none;
+  width: 100%;
+  background-color: #f9f9f9;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  z-index: 100;
+}
+
+#tab-bar .row {
+  height: 100%;
+}
+
+#tab-bar .col,
+#tab-bar footer .social-icons,
+footer #tab-bar .social-icons {
+  text-align: center;
+  height: 100%;
+  line-height: 4;
+}
+
+#tab-bar .col:hover,
+#tab-bar footer .social-icons:hover,
+footer #tab-bar .social-icons:hover {
+  background-color: white;
+}
+
+#tab-bar .col i,
+#tab-bar footer .social-icons i,
+footer #tab-bar .social-icons i {
+  font-size: 20pt;
+}
+
+#tab-bar .col .btn-hover,
+#tab-bar footer .social-icons .btn-hover,
+footer #tab-bar .social-icons .btn-hover {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
 @media (max-width: 767px) {
   #description .col-md-6 {
     margin: 1em 0;
@@ -11133,6 +11174,14 @@ footer #wave {
 
   .hidden {
     display: none;
+  }
+
+  #tab-bar {
+    display: block;
+  }
+
+  .fb_dialog {
+    bottom: 70pt !important;
   }
 }
 
