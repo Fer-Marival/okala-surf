@@ -10613,11 +10613,13 @@ h1 {
   letter-spacing: 2px;
 }
 
-h2 {
+h4 {
   font-family: "Rock Salt", cursive;
   background: -webkit-linear-gradient(135deg, #65FDF0 10%, #1D6FA3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 30pt;
+  padding-left: 10px;
 }
 
 h3 {
@@ -10636,7 +10638,8 @@ h3 {
 
 .home {
   width: 100%;
-  height: 70vh;
+  height: auto;
+  max-height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10644,7 +10647,19 @@ h3 {
   position: relative;
 }
 
-.home svg {
+#home-slider {
+  margin-top: 90px !important;
+}
+
+.wave svg {
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave svg {
   position: absolute;
   z-index: 1;
   bottom: -1px;
@@ -10715,8 +10730,26 @@ footer .booking form .row .social-icons:nth-last-child(1) {
   color: white;
 }
 
+.gray {
+  background-color: #f9f9f9;
+}
+
 .services {
   background-color: #09cbea;
+}
+
+.explaind p {
+  margin-top: 1em;
+  color: #666;
+}
+
+.explaind p i {
+  margin-right: 10px;
+  color: #09cbea;
+}
+
+.explaind p strong {
+  color: #232323;
 }
 
 .service {
@@ -10761,6 +10794,23 @@ footer #description .social-icons {
   padding-bottom: 50px;
 }
 
+#description .row {
+  margin: 7em auto;
+  padding: 20px 0;
+}
+
+#description .container-cool {
+  max-width: 1440px;
+  margin: auto;
+  width: 90%;
+}
+
+.container-cool {
+  max-width: 1440px;
+  margin: auto;
+  width: 90%;
+}
+
 .coaches .coach {
   margin: 1.5em auto;
   transition: all 0.25s ease-in-out;
@@ -10773,6 +10823,10 @@ footer #description .social-icons {
 .coaches .coach:hover {
   box-shadow: none !important;
   border: 0.5px solid #f9f9f9;
+}
+
+.slider {
+  box-shadow: 12px 12px 14px rgba(0, 0, 0, 0.17);
 }
 
 .coments {
@@ -10913,13 +10967,28 @@ footer svg path {
   fill: #FFF;
 }
 
+footer #wave {
+  margin-top: -2px;
+}
+
 .bk-header {
-  background-image: url("/img/girls.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 350px;
+  height: 500px;
   margin-bottom: 2em;
+}
+
+.snorkel {
+  background-image: url("/img/snorkel/header.jpg");
+}
+
+.surf {
+  background-image: url("/img/surf/header.jpg");
+}
+
+.sup {
+  background-image: url("/img/SUP/header.jpg");
 }
 
 .header {
@@ -10932,7 +11001,8 @@ footer svg path {
 }
 
 .header .logo {
-  width: 130px;
+  margin: auto;
+  width: 200px;
   display: block;
 }
 
@@ -10941,6 +11011,10 @@ footer svg path {
   text-align: center;
   margin: 5px;
   vertical-align: middle;
+}
+
+.header .social-icons a i {
+  font-size: 30px;
 }
 
 #social {
@@ -10985,20 +11059,12 @@ footer svg path {
 
 #social .grid-sizer,
 #social .grid-item {
-  width: 200px;
-  height: 200px;
+  width: 300px;
 }
 
 #social .grid-sizer:hover,
 #social .grid-item:hover {
   background: #09cbea;
-}
-
-#social .grid-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 5px solid white;
 }
 
 #social .grid-item img:hover {
@@ -11035,9 +11101,100 @@ footer svg path {
   outline: none;
 }
 
-.color-9 {
+.btn-rounder {
+  color: #09cbea;
+  border: 1px solid #09cbea;
+  margin-right: 15px;
+}
+
+.color-9,
+.btn-rounder:hover {
   background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.xs-fr {
+  float: right;
+}
+
+#tab-bar {
+  display: none;
+  width: 100%;
+  background-color: #f9f9f9;
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  z-index: 100;
+}
+
+#tab-bar .row {
+  height: 100%;
+}
+
+#tab-bar .col,
+#tab-bar footer .social-icons,
+footer #tab-bar .social-icons {
+  text-align: center;
+  height: 100%;
+  line-height: 4;
+}
+
+#tab-bar .col:hover,
+#tab-bar footer .social-icons:hover,
+footer #tab-bar .social-icons:hover {
+  background-color: white;
+}
+
+#tab-bar .col i,
+#tab-bar footer .social-icons i,
+footer #tab-bar .social-icons i {
+  font-size: 20pt;
+}
+
+#tab-bar .col .btn-hover,
+#tab-bar footer .social-icons .btn-hover,
+footer #tab-bar .social-icons .btn-hover {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+  #description .col-md-6 {
+    margin: 1em 0;
+  }
+
+  .header .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #home-slider {
+    margin-top: 90px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #tab-bar {
+    display: block;
+  }
+
+  .fb_dialog {
+    bottom: 70pt !important;
+  }
+}
+
+@media (max-width: 630px) {
+  .header .social-icons a i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 457px) {
+  .btn-hover {
+    width: auto;
+  }
 }
 
 .navbar-laravel {

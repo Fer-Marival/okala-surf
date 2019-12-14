@@ -42,7 +42,7 @@ class BookController extends Controller
         ), function($message)
         {
         	$message->from('web@okalasurfschool.com');
-        	$message->to('furibe@marivalaccess.com', 'Admin')->subject('new booking');
+        	$message->to('okalasurfschool@gmail.com.com', 'Admin')->subject('new booking');
         });
         return back()->with('success', 'Thanks for contact');
     }

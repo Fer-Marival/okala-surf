@@ -8587,10 +8587,10 @@ return ImagesLoaded;
 
 /***/ }),
 
-/***/ "./node_modules/instafeed/instafeed.js":
-/*!*********************************************!*\
-  !*** ./node_modules/instafeed/instafeed.js ***!
-  \*********************************************/
+/***/ "./node_modules/instafeed.js/instafeed.js":
+/*!************************************************!*\
+  !*** ./node_modules/instafeed.js/instafeed.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -76460,7 +76460,7 @@ try {
 
   window.sliderPro = __webpack_require__(/*! slider-pro */ "./node_modules/slider-pro/dist/js/jquery.sliderPro.js");
   window.daterange = __webpack_require__(/*! daterangepicker */ "./node_modules/daterangepicker/daterangepicker.js");
-  window.insta = __webpack_require__(/*! instafeed */ "./node_modules/instafeed/instafeed.js");
+  window.insta = __webpack_require__(/*! instafeed.js */ "./node_modules/instafeed.js/instafeed.js");
   window.imagesloaded = __webpack_require__(/*! imagesLoaded */ "./node_modules/imagesLoaded/imagesloaded.js");
   window.masonry = __webpack_require__(/*! masonry-layout */ "./node_modules/masonry-layout/masonry.js");
 } catch (e) {}
@@ -76580,6 +76580,17 @@ __webpack_require__.r(__webpack_exports__);
 
 // $( '#my-slider' ).sliderPro();
 $(document).ready(function ($) {
+  $('.slider').sliderPro({
+    width: "100%",
+    height: 330,
+    arrows: true,
+    buttons: false,
+    shuffle: true,
+    thumbnailArrows: true,
+    autoplay: true
+  });
+});
+$(document).ready(function ($) {
   $('#my-slider').sliderPro({
     width: 960,
     height: 330,
@@ -76608,7 +76619,7 @@ $(document).ready(function ($) {
 $(document).ready(function ($) {
   $('#home-slider').sliderPro({
     width: "100%",
-    height: 500,
+    height: 700,
     arrows: false,
     buttons: false,
     shuffle: true,
@@ -76626,17 +76637,19 @@ $(document).ready(function ($) {
 });
 var scene = document.getElementById('scene'); // var parallaxInstance = new Parallax(scene);
 //fixed nav bar
+// window.addEventListener('scroll',()=>{
+// 	let scroll = document.documentElement.scrollTop || document.body.scrollTop,
+// 		 menu = document.getElementsByClassName('booking')
+// 	scroll >= 400
+// 		? menu[0].classList.add('fixed')
+// 		: menu[0].classList.remove('fixed')
+// })
 
-window.addEventListener('scroll', function () {
-  var scroll = document.documentElement.scrollTop || document.body.scrollTop,
-      menu = document.getElementsByClassName('booking');
-  scroll >= 400 ? menu[0].classList.add('fixed') : menu[0].classList.remove('fixed');
-});
 $(function () {
   $('input[name="days"]').daterangepicker();
 });
 
-var Instafeed = __webpack_require__(/*! instafeed */ "./node_modules/instafeed/instafeed.js");
+var Instafeed = __webpack_require__(/*! instafeed.js */ "./node_modules/instafeed.js/instafeed.js");
 
 var imagesLoaded = __webpack_require__(/*! imagesLoaded */ "./node_modules/imagesLoaded/imagesloaded.js");
 
@@ -76644,10 +76657,10 @@ var Masonry = __webpack_require__(/*! masonry-layout */ "./node_modules/masonry-
 
 var feed = new Instafeed({
   get: 'user',
-  userId: 7493294533,
-  accessToken: '7493294533.1677ed0.2c006cb41f694755b99942cb17103001',
+  userId: 12629740869,
+  accessToken: '12629740869.1677ed0.d02ce1362e60485f986d3b13a61fc271',
   resolution: 'standard_resolution',
-  template: '<div class="grid-item col"><a href="{{link}}" title="{{caption}}" data-fancybox="gallery" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+  template: '<div class="grid-item"><a href="{{link}}" title="{{caption}}" data-fancybox="gallery" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
   limit: 9,
   sortBy: 'random',
   after: function after() {
@@ -76656,7 +76669,8 @@ var feed = new Instafeed({
       var msnry = new Masonry(elem, {
         columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
-        percentPosition: true
+        percentPosition: true,
+        fitWidth: true
       });
     });
   }

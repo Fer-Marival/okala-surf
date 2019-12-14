@@ -19,7 +19,7 @@
 				@endif
 			</div>	
 			<div class="col-md-8">
-				<form action="{{route('booknow.store')}}" method="POST" enctype="multipart/form-data" class="form">
+				<form action="{{ route('enviaremail') }}" method="POST" enctype="multipart/form-data" class="form">
 					@csrf
 					<h3>Reservation data</h3>
 				  <div class="form-row">
