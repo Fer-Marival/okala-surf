@@ -13,6 +13,9 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
+     'postmark' => [
+            'secret' => env('POSTMARK_SECRET'),    
+        ],
 
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
