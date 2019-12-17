@@ -9,23 +9,20 @@
 		<div class="col-md-8">
 			<div class="container explaind">
 				<h4>Sup Standup</h4>
-				<p><i class="far fa-clock"></i><strong>Transportation:</strong><br />Tour is approximately 3-3:30 hours. </p>	
-
-				<p><i class="fas fa-truck-pickup"></i><strong>Pick up / drop off:</strong><br /> We will pick you up and drop you off at your hotel or the address that you prefer
-				safe, private and personalized tour</p>
+				<p><i class="far fa-clock"></i><strong>Transportation:</strong><br />The tour is approximately 4 to 5 hours. We will provide pick up and drop off at your hotel or address you prefer. </p>	
 
 				<p><em>We count on the best  equipment for your experience: STAND UP PADDLEBOARDS , KAYAKS , CHAIRS , UMBRELLAS , FLOTATION VEST.</em></p>
 
-				<p><i class="fas fa-tshirt"></i><strong>Surf lycra:</strong><br />
-				comfortable rash guards for warm or cold  water/ whether and to  prevent chafing.</p>
+				<p><i class="fas fa-tshirt"></i><strong>Rash Guard/Surf Shirt:</strong><br />
+					We have rash guards/surf shirts for different climates, warm or cold water and to prevent chafing.</p>
 
-				<p><i class="fas fa-cookie-bite"></i><strong>snak and seeds </strong><br />
-				Seasonal fruit, water, hydrating drinks, nutritional bars, seeds and natural products.</p>
+				<p><i class="fas fa-cookie-bite"></i><strong>Surfers Breakfast/Snack: </strong><br />
+					We will provide you with a light breakfast/snack which includes a nutritional bar, seasonal fruit and a bottle of water.</p>
 
-				<p><i class="fas fa-camera-retro"></i><strong>Photographs for sale</strong><br />
-				In exchange of a  review/photo tag on our website we still provide you as a gif 2 pictures per person. </p>
+				<p><i class="fas fa-camera-retro"></i><strong>Photographs:</strong><br />
+					In exchange for a review on our website and Tripadvisor we will gift you two pictures per person. Additional photographs available for purchase. </p>
 
-				<p><em>Professional  instructors, water sports experts, ready to create the best experiences.</em></p>
+				<p><em>*We provide professional instructors and water sports experts ready to create the best experience. Included are surf boards, boogie boards, long boards, SUP (stand up paddle boards), beach chairs, umbrellas and floatation vests.</em></p>
 			</div>
 		</div>
 		<div class="col-md-4">
