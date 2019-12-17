@@ -17,6 +17,10 @@ return [
             'secret' => env('POSTMARK_SECRET'),    
         ],
 
+    'postmark' => [
+        'secret' => env('POSTMARK_SECRET'),    
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
