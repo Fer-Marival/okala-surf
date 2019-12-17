@@ -1,21 +1,20 @@
 
 Hello,
-You received a message from : {{ $request->name }}
+You received a message from : {{ $data->name }}
  
 <p>
-User Name: {{ $request->name }}
+User Name: {{ $data->name }}
 </p>
  
 <p>
-User Email: {{ $request->email }}
+User Email: {{ $data->email }}
 </p>
  
 <h2>Nueva resrevacion de:</h2>
-<h1>{{ $request->name }} {{ $request->lastname }}</h1>  
-<p>{{ $request->email  }}</p>
-<p>{{ $request->cellphone  }}</p>
-<p>{{ $request->country  }}</p>
-<p>{{ $request->city  }}</p>
-<p>{{ $request->state  }}</p>
-<p>{{ $request->pk_adress  }}</p>
-
+<h1>{{ $data->name }} {{ $data->lastname }}</h1>  
+<p>{{ $data->email  }}</p>
+<p>{{ $data->cellphone  }}</p>
+<p>{{ $data->country  }}</p>
+<p>{{ $data->city  }}</p>
+<p>{{ $data->state  }}</p>
+<p>{{ $data->pk_adress  }}</p>

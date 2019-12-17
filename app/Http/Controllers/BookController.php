@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\BookForm;
-use Mail;
+use App\Mail\Reservation;
+use Illuminate\Support\Facades\Mail;
+//use Mail;
+
 
 class BookController extends Controller
 {
@@ -16,7 +19,7 @@ class BookController extends Controller
 
     public function booknowPost(Request $request)
     {
-
+	//dd($request->all());
     	$this->validate($request,[
     		'name' => 'required',
     		'lastname' => 'required',
@@ -27,23 +30,16 @@ class BookController extends Controller
     		'state' => 'required',
     		'pk_adress' => 'required'
     	]);
-    	BookForm::create($request->all());
-        Mail::send('emails.email',
-        array(
-           	'name' => $request->get('name'),
-    		'lastname' => $request->get('lastname'),
-    		'email' => $request->get('email'),
-    		'cellphone' => $request->get('cellphone'),
-    		'country' => $request->get('country'),
-    		'city' => $request->get('city'),
-    		'state' => $request->get('state'),
-    		'pk_adress' => $request->get('pk_adress')
+		BookForm::create($request->all());
+		
+		Mail::to($request->email)->send(new Reservation($request));
 
-        ), function($message)
-        {
-        	$message->from('web@okalasurfschool.com');
-        	$message->to('okalasurfschool@gmail.com.com', 'Admin')->subject('new booking');
-        });
+		
+		// function($message)
+        // {
+        // 	$message->from('web@okalasurfschool.com');
+        // 	$message->to('okalasurfschool@gmail.com.com', 'Admin')->subject('new booking');
+        // });
         return back()->with('success', 'Thanks for contact');
     }
 }
