@@ -5103,6 +5103,42 @@
         ]
     },
     {
+        "name": "wildbit/postmark-php",
+        "version": "2.8.0",
+        "version_normalized": "2.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wildbit/postmark-php.git",
+            "reference": "06581271d5a6fb731fa0e1d9a0286b83079343a2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wildbit/postmark-php/zipball/06581271d5a6fb731fa0e1d9a0286b83079343a2",
+            "reference": "06581271d5a6fb731fa0e1d9a0286b83079343a2",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/guzzle": "~6.0",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.4.0"
+        },
+        "time": "2019-08-22T06:50:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Postmark\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "The officially supported client for Postmark (http://postmarkapp.com)"
+    },
+    {
         "name": "zendframework/zend-diactoros",
         "version": "1.8.6",
         "version_normalized": "1.8.6.0",
@@ -5166,76 +5202,6 @@
             "http",
             "psr",
             "psr-7"
-        ]
-    },
-    {
-        "name": "coconutcraig/laravel-postmark",
-        "version": "v2.7.1",
-        "version_normalized": "2.7.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/craigpaul/laravel-postmark.git",
-            "reference": "78d0123323874855b895dcee5ade0314c7bea481"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/craigpaul/laravel-postmark/zipball/78d0123323874855b895dcee5ade0314c7bea481",
-            "reference": "78d0123323874855b895dcee5ade0314c7bea481",
-            "shasum": ""
-        },
-        "require": {
-            "ext-json": "*",
-            "guzzlehttp/guzzle": "~6.0",
-            "illuminate/mail": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
-            "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
-            "php": ">=7.1.3"
-        },
-        "require-dev": {
-            "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0|~3.8.0|~3.9.0",
-            "phpunit/phpunit": "~6.0|~7.0|~8.0"
-        },
-        "suggest": {
-            "mvdnbrk/postmark-inbound": "Allows you to process Postmark Inbound Webhooks."
-        },
-        "time": "2019-11-08T13:50:38+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.0-dev"
-            },
-            "laravel": {
-                "providers": [
-                    "Coconuts\\Mail\\PostmarkServiceProvider"
-                ]
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Coconuts\\Mail\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Craig Paul",
-                "email": "craig.paul@coconutcalendar.com",
-                "homepage": "https://coconutcalendar.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Laravel package for sending mail via the Postmark API",
-        "homepage": "https://github.com/coconutcraig/laravel-postmark",
-        "keywords": [
-            "coconutcraig",
-            "email",
-            "laravel",
-            "mail",
-            "postmark",
-            "wildbit"
         ]
     }
 ]

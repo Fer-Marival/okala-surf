@@ -96,10 +96,10 @@
 				</div>
 				<div class="col-md-6">
 					<div class="title">
-						<h4>Surflessons</h4>
+						<h4>Surf lessons</h4>
 					</div>
 					<div class="content">
-							Surf  and adventure school in puerto vallarta with tours all around the bay (pv, Mita, sayulita) with perfect waves for all different levels. practice safe and surrounded by nature.<br /><br />
+						Surf and adventure school in puerto vallarta with tours all around the bay (PV, Mita, Sayulita). Finding the perfect waves for all different levels of experience and to practice safely surrounded by nature.<br /><br />
 						<div class="btn-group">
 								<a href="/surf-lesson" class="btn-hover btn-rounder">See details</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
@@ -131,10 +131,10 @@
 				</div>
 				<div class="col-md-6 order-md-1">
 					<div class="title">
-						<h4>Supstandup</h4>
+						<h4 class="p-4">SUP</h4><strong>(Stand Up Paddle)</strong>
 					</div>
 					<div class="content">
-							Book and get to know our routes for sup and live a magical and relaxing experience, padding and appreciating the beauty of los Arcos de mismaloya while you exercise a bit.<br /><br />
+						Book and have a magical and relaxing experience while incorporating exercise. Paddling from Mismaloya to Los Arcos to experience the beauty of Los Arcos and surrounding mountains.<br /><br />
 						<div class="btn-group">
 								<a href="/supstandup" class="btn-hover btn-rounder">See details</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
@@ -169,7 +169,7 @@
 						<h4>Snorkel</h4>
 					</div>
 					<div class="content">
-							Come  look and enjoy the marine life surrounded by nature,  mountains and crystal clear water in the south coast of Puerto vallarta in our snorkel tour <br /><br />
+						Book our snorkeling tour and enjoy the magical marine life surrounded by crystal clear water and lush green mountains on the Southern coast of Puerto Vallarta.<br /><br />
 							<div class="btn-group">
 								<a href="/snorkel" class="btn-hover btn-rounder">See details</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
