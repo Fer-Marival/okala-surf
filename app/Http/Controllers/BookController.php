@@ -19,8 +19,9 @@ class BookController extends Controller
 
     public function booknowPost(Request $request)
     {
-	// dd($request->all());
+		// dd($request->all());
     	$this->validate($request,[
+			'classes' => 'required',
     		'name' => 'required',
     		'lastname' => 'required',
     		'email' => 'required|email',
@@ -28,7 +29,9 @@ class BookController extends Controller
     		'country' => 'required',
     		'city' => 'required',
     		'state' => 'required',
-    		'pk_adress' => 'required'
+			'pk_adress' => 'required',
+			'special_required ' => ''
+			
     	]);
 		BookForm::create($request->all());
 		

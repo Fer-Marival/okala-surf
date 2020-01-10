@@ -16,6 +16,7 @@ class BookNowTable extends Migration
         Schema::create('booknow', function(Blueprint $table)
         {
             $table->increments('id');
+            $table->string('classes');
             $table->string('name');
             $table->string('lastname');
             $table->string('email');
@@ -24,6 +25,7 @@ class BookNowTable extends Migration
             $table->string('city');
             $table->string('state');
             $table->string('pk_adress');
+            $table->string('special_required');
             $table->timestamps();
         });
         //
