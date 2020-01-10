@@ -15,7 +15,7 @@
 				</picture></a>
 			</div>
 			<div class="col-xs-4 col-md-4 hidden">
-				<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+				<a href="{{ route('booking.reservation') }}" class="btn-hover color-9">@lang('global.book')</a>
 			</div>
 		</div>
 	</div>

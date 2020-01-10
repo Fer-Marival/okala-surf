@@ -27,8 +27,8 @@ Route::post('/', 'PageController@store')->name('booking.send');
 // 	return redirect('/booking')->with('message', 'Gracias por contáctarnos, pronto recibirá respuesta.');
 // })-> name('enviaremail');
 
-Route::post('/booking', ['as'=>'booknow.store',
-'uses'=> 'BookController@booknowPost']);
+Route::get('/booking', 'BookController@booknow')->name('booking.reservation');
+Route::post('/booking', 'BookController@booknowPost')->name('booknow.store');
 
 Route::group(['middleware' => ['web']], function () {
  

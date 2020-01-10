@@ -19,7 +19,7 @@ class BookController extends Controller
 
     public function booknowPost(Request $request)
     {
-	//dd($request->all());
+	// dd($request->all());
     	$this->validate($request,[
     		'name' => 'required',
     		'lastname' => 'required',
