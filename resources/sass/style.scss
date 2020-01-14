@@ -447,7 +447,8 @@ footer{
     text-align:center;
     border: none;
     background-size: 300% 100%;
-    border-radius: 50px;
+	border-radius: 50px;
+	float: left;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -507,6 +508,14 @@ footer{
 		}
 	}
 
+}
+.show{
+	display: block;
+	width: 100px;
+	margin-left: 5px;
+}
+.no-show{
+	display:none;
 }
 
 @media (max-width:767px){

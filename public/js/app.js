@@ -76714,8 +76714,8 @@ window.fbAsyncInit = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/fer/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/fer/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/apple/Documents/GitHub/okala-surf/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

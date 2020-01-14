@@ -11085,6 +11085,7 @@ footer #wave {
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
+  float: left;
   moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -11156,6 +11157,16 @@ footer #tab-bar .social-icons i {
 footer #tab-bar .social-icons .btn-hover {
   border-radius: 0;
   box-shadow: none !important;
+}
+
+.show {
+  display: block;
+  width: 100px;
+  margin-left: 5px;
+}
+
+.no-show {
+  display: none;
 }
 
 @media (max-width: 767px) {

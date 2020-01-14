@@ -23,7 +23,9 @@ return [
     'see' => 'Ver detalles',
     'send' => 'Enviar mensaje',
     'languaje' => 'Languaje',
-
+    'show' => 'show',
+    'no-show' => 'no-show',
+ 
     //footer
     'follow-us' => 'Síguenos',
     'info' => 'Información',
@@ -57,5 +59,19 @@ return [
     'contact' => 'Contactanos',
     'subname' => 'Escuela de Surf',
     'description' => 'Okala Surf School, la escuela especializada en enseñarte a dominar las olas, deja de mirar a los demás como se divierten y aprende esta hermosa disciplina acuatíca, en las hermosas playas de la costa de bahía de banderas y Cabo Corriente. ',
+
+    //formulario:
+    'form-intro' => 'Datos para reservar',
+    'sub-intro' => 'Selecciona la clase:',
+    'name' => 'Nombre',
+    'lastname' => 'Apellido',
+    'phone' => 'Celular',
+    'country' => 'País',
+    'city' => 'Ciudad',
+    'state' => 'Estado',
+    'pickup' => 'Dirección a recoger:',
+    'special-required' => 'Requerimientos especiales',
+    'term' => 'Acepto terminos y condiciones',
+    'confirm-btn'=> 'Confirmar reserva',
 
 ];

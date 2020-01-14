@@ -23,53 +23,53 @@
 			<div class="col-md-8">
 				<form action="{{ route('booknow.store') }}" method="POST" enctype="multipart/form-data" class="form">
 					@csrf
-					<h3>Reservation data</h3>
+					<h3>@lang('global.form-intro')</h3>
 				  <div class="form-row">
 					<div class="form-group col-md-8">
 						
-						<label for="inputClasses">Please select lesson</label>
+						<label for="inputClasses">@lang('global.sub-intro')</label>
 						<select id="inputClasess" class="form-control" name="classes" >
 						  <option selected>Choose...</option>
-						  <option value="Surf">SURF</option>
-						  <option value="Snorkel">SNORKEL</option>
-						  <option value="SUP">SUP</option>
+						  <option value="Surf">@lang('global.surf-lesson')</option>
+						  <option value="Snorkel">@lang('global.snorkel-lesson')</option>
+						  <option value="SUP">@lang('global.sup-lesson')</option>
 						</select>
 					  </div>
 					    <div class="form-group col-md-6">
-					      <label for="name">Name:</label>
-					      <input type="text" class="form-control" name="name" placeholder="reservation name">
+					      <label for="name">@lang('global.name')</label>
+					      <input type="text" class="form-control" name="name" placeholder="@lang('global.name')">
 					    </div>
 					    <div class="form-group col-md-6">
-					      <label for="lastname">Last Name:</label>
+					      <label for="lastname">@lang('global.lastname')</label>
 					      <input type="text" class="form-control" placeholder="Last name" name="lastname">
 					    </div>
 					  </div>
 					  <div class="form-row">
 					    <div class="form-group col-md-6">
-					      <label for="inputEmail4">Email</label>
+					      <label for="inputEmail4">Email:</label>
 					      <input type="email" class="form-control" placeholder="Email" name="email">
 					    </div>
 					    <div class="form-group col-md-6">
-					      <label for="inputPassword4">Cell phone</label>
-					      <input type="number" class="form-control" placeholder="Phone" name="cellphone">
+					      <label for="inputPassword4">@lang('global.phone')</label>
+					      <input type="number" class="form-control" placeholder="@lang('global.phone')" name="cellphone">
 					    </div>
 					  </div>
 					   <div class="form-row">
 					   	 <div class="form-group col-md-4">
-							<label for="country">Country</label>
-							<input type="text" class="form-control" placeholder="country" name="country">
+							<label for="country">@lang('global.country')</label>
+							<input type="text" class="form-control" placeholder="@lang('global.country')" name="country">
 					    </div>
 					    <div class="form-group col-md-4">
-					      <label for="inputCity">City</label>
+					      <label for="inputCity">@lang('global.city')</label>
 					      <input type="text" class="form-control" name="city" id="inputCity">
 					    </div>
 					    <div class="form-group col-md-4">
-							<label for="inputState">State</label>
+							<label for="inputState">@lang('global.state')</label>
 					     	<input type="text" class="form-control" name="state" id="inputCity">
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <label for="inputAddress">Pick up Address</label>
+					    <label for="inputAddress">@lang('global.pickup')</label>
 					    <input type="text" class="form-control" id="inputAddress" name="pk_adress" placeholder="1234 Main St">
 					  </div>
 					   {{-- <div class="form-row">
@@ -94,7 +94,7 @@
 					  </div> --}}
 					  <div class="form-row">
 						<div class="form-group col-md-12">
-							<label>Special required</label>
+							<label>@lang('global.special-required')</label>
 							<textarea class="form-control" id="special-required" name="special_required" rows="3"></textarea>
 						</div>
 					  </div>
@@ -102,11 +102,11 @@
 					    <div class="form-check">
 					      <input class="form-check-input" type="checkbox" id="gridCheck">
 					      <label class="form-check-label" for="gridCheck">
-					    	I accept terms and conditions
+					    	@lang('global.term')
 					      </label>
 					    </div>
 					  </div>
-					  <button type="submit" class="btn-hover color-9">Confirm Booking</button>
+					  <button type="submit" class="btn-hover color-9">@lang('global.confirm-btn')</button>
 					</form>
 			</div>
 			<div class="col-md-4">
