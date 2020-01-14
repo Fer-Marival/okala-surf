@@ -96,12 +96,12 @@
 				</div>
 				<div class="col-md-6">
 					<div class="title">
-						<h4>Surf lessons</h4>
+						<h4>@lang('global.surf-lesson')</h4>
 					</div>
 					<div class="content">
-						Surf and adventure school in puerto vallarta with tours all around the bay (PV, Mita, Sayulita). Finding the perfect waves for all different levels of experience and to practice safely surrounded by nature.<br /><br />
+						@lang('global.surf-description')<br /><br />
 						<div class="btn-group">
-								<a href="/surf-lesson" class="btn-hover btn-rounder">See details</a>
+								<a href="/surf-lesson" class="btn-hover btn-rounder">@lang('global.see')</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 						</div>
 					</div>
@@ -131,12 +131,12 @@
 				</div>
 				<div class="col-md-6 order-md-1">
 					<div class="title">
-						<h4 class="p-4">SUP</h4><strong>(Stand Up Paddle)</strong>
+						@lang('global.sup-lesson')
 					</div>
 					<div class="content">
-						Book and have a magical and relaxing experience while incorporating exercise. Paddling from Mismaloya to Los Arcos to experience the beauty of Los Arcos and surrounding mountains.<br /><br />
+						@lang('global.sup-description')<br /><br />
 						<div class="btn-group">
-								<a href="/supstandup" class="btn-hover btn-rounder">See details</a>
+								<a href="/supstandup" class="btn-hover btn-rounder">@lang('global.see')</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 							</div>
 					</div>
@@ -166,12 +166,12 @@
 				</div>
 				<div class="col-md-6">
 					<div class="title">
-						<h4>Snorkel</h4>
+						<h4>@lang('global.snorkel-lesson')</h4>
 					</div>
 					<div class="content">
-						Book our snorkeling tour and enjoy the magical marine life surrounded by crystal clear water and lush green mountains on the Southern coast of Puerto Vallarta.<br /><br />
+						@lang('global.snorkel-description')<br /><br />
 							<div class="btn-group">
-								<a href="/snorkel" class="btn-hover btn-rounder">See details</a>
+								<a href="/snorkel" class="btn-hover btn-rounder">@lang('global.see')</a>
 								<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
 							</div>
 					</div>
@@ -213,7 +213,7 @@
 			  	<div class="grid-sizer"></div>
 			</div>
 	</div>
-	<section class="coments">
+	{{-- <section class="coments">
 		<div class="container">
 			<div class="row">
 				<div class="col"><h3 class="title">@lang('global.review')</h3></div>
@@ -249,7 +249,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>––}}
 	<div class="clear"></div>
 	{{--  <div class="coaches">
 		<h3 class="title">Okala Coaches</h3>
@@ -281,7 +281,7 @@
 				</div>
 			</div>
 		</div>
-	</div>  --}}
+	</div> 
 	<div class="clear"></div>
 	<section class="events">
 		<div class="container">
@@ -310,10 +310,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 	<div class="contact">
 		<div class="container">
-			<h3>@lang('global.contact') 🤙</h3>
+			<h3><a href="mailto:okalasurschool@gmail.com">@lang('global.contact') 🤙</a></h3>
 			{{-- 
 			<div class="row">
 				<div class="col">

@@ -16,6 +16,8 @@
 			</div>
 			<div class="col-xs-4 col-md-4 hidden">
 				<a href="{{ route('booking.reservation') }}" class="btn-hover color-9">@lang('global.book')</a>
+				<li><a href="{{ url('lang', ['en']) }}">En</a></li>
+				  <li><a href="{{ url('lang', ['es']) }}">Es</a></li>
 			</div>
 		</div>
 	</div>
@@ -33,6 +35,8 @@
 		</div>
 		<div class="col">
 			<a href="/booking" class="btn-hover color-9">@lang('global.book')</a>
+			<li><a href="{{ url('lang', ['en']) }}">En</a></li>
+			<li><a href="{{ url('lang', ['es']) }}">Es</a></li>
 		</div>
 	</div>
 </div>

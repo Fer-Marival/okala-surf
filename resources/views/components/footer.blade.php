@@ -7,18 +7,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="social-icons">
-				<p>Follow us!!  </p>
+				<p>@lang('global.follow-us') </p>
 				<a href="https://www.facebook.com/okalasurfschool"><i class="fab fa-facebook"></i></a>
 				<a href="https://www.instagram.com/okalasurfschoolpv"><i class="fab fa-instagram"></i></a>
 				<a href="trip"><i class="fab fa-tripadvisor"></i></a>
 			</div>
 			<div class="col">
-				<strong>Information:</strong> <br>
-				<p>Contact us to : <a href="tel:">322-123-4567</a></p>
-				<p>Email us to <a href="mailto:okalasurfschool@gmail.com">aloha@okalasurfschool.com</a></p>
+				<strong>@lang('global.info')</strong> <br>
+				<p>@lang('global.contact-to') <a href="tel:">322-123-4567</a></p>
+				<p>@lang('global.email-to') <a href="mailto:okalasurfschool@gmail.com">aloha@okalasurfschool.com</a></p>
 			</div>
 			<div class="col">
-				Subscribe ours newsletter
+				@lang('global.suscribe')
 				<form action="" class="form">
 					<input type="text" placeholder="your email">
 					<button type="submit" class="btn btn-info">Suscribe</button>
